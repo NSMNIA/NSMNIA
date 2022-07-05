@@ -1,8 +1,135 @@
-.navigation {
-    display: flex;
-    width: 100%;
+@import "../../assets/scss/breakpoints";
 
-    &-inner {
+.logo {
+
+    svg {
+        width: 40px;
+        transition-property: fill stroke;
+        transition-duration: .3s;
+        transition-timing-function: ease-in-out;
+
+        .black {
+            fill: var(--foreground1);
+            transition: inherit;
+        }
+
+        .white {
+            fill: var(--background1);
+            transition: inherit;
+        }
+
+        .white--stroke {
+            stroke: var(--background1);
+            transition: inherit;
+        }
+    }
+
+    &:hover {
+        svg {
+            .black {
+                fill: var(--accent);
+            }
+
+            .white {
+                fill: hsl(0, 0%, 100%)
+            }
+
+            .white--stroke {
+                stroke: hsl(0, 0%, 100%)
+            }
+        }
+    }
+}
+
+.sidebar {
+    width: 120px;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    position: fixed;
+
+    @include media("<=1215px") {
         width: 100%;
+        height: 70px;
+    }
+
+    &--inner {
+        margin: 2rem 0;
+        height: calc(100% - 4rem);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+
+        @include media("<=1215px") {
+            flex-direction: row;
+            justify-content: space-between;
+            margin: unset;
+            padding: 2rem;
+            height: 100%;
+        }
+    }
+
+    &--progress {
+        height: 100%;
+        width: 1px;
+        background-color: var(--background2);
+        border-radius: 5555px;
+        overflow: hidden;
+
+        @include media("<=1215px") {
+            display: none;
+        }
+
+        &-scrolled {
+            height: 0%;
+            width: 100%;
+            border-radius: 5555px;
+            background-color: var(--accent)
+        }
+    }
+
+    &--bottom {
+        position: relative;
+        min-height: calc(136.25px + 2rem);
+
+        @include media("<=1215px") {
+            min-height: unset;
+        }
+    }
+
+    &--links {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        transform-origin: 0 0;
+        position: absolute;
+        transform: rotate(-90deg) translateY(-55%);
+        bottom: 0;
+        left: 50%;
+
+        @include media("<=1215px") {
+            position: relative;
+            transform: unset;
+            bottom: unset;
+            left: unset;
+        }
+    }
+
+    &--link {
+        color: var(--foreground2);
+        font-size: 1rem;
+        font-weight: 700;
+        transition-property: color;
+        transition-duration: .17s;
+        transition-timing-function: ease-in-out;
+        line-height: 1.375;
+        letter-spacing: 0.2px;
+
+        &:hover {
+            color: var(--accent);
+        }
     }
 }
