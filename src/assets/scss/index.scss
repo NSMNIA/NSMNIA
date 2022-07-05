@@ -207,9 +207,9 @@ table {
 :root {
     color-scheme: light;
     --background1: hsl(0, 0%, 100%);
-    --background2: hsl(0, 0%, 80%);
+    --background2: hsl(0, 0%, 70%);
     --foreground1: hsl(0, 0%, 10%);
-    --foreground2: hsl(0, 0%, 30%);
+    --foreground2: hsl(0, 0%, 40%);
     --accent: hsl(215, 99%, 41%);
     --accent--lighter: hsl(215, 100%, 61%);
     --accent--darker: hsl(215, 100%, 21%);
@@ -222,10 +222,15 @@ table {
     :root {
         color-scheme: dark;
         --background1: hsl(0, 0%, 10%);
-        --background2: hsl(0, 0%, 30%);
+        --background2: hsl(0, 0%, 40%);
         --foreground1: hsl(0, 0%, 100%);
-        --foreground2: hsl(0, 0%, 80%);
+        --foreground2: hsl(0, 0%, 70%);
     }
+}
+
+::selection {
+    background: var(--background2);
+    color: var(--foreground2);
 }
 
 html {
@@ -252,7 +257,7 @@ h5 {
     margin: 3rem 0 1.38rem;
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    line-height: 1.3
+    line-height: 1.3;
 }
 
 h1 {
