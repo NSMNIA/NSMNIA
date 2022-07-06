@@ -214,7 +214,13 @@ table {
     --accent--lighter: hsl(215, 100%, 61%);
     --accent--darker: hsl(215, 100%, 21%);
 
-    --max-width: 1060px;
+    --background1--alpha: hsla(0, 0%, 100%, 0.5);
+    --background2--alpha: hsla(0, 0%, 70%, 0.5);
+    --foreground1--alpha: hsla(0, 0%, 10%, 0.5);
+    --foreground2--alpha: hsla(0, 0%, 40%, 0.5);
+    --accent--alpha: hsla(215, 99%, 41%, 0.5);
+
+    --max-width: calc(1060px + 4rem);
     --max-width--padding: 2rem;
 }
 
@@ -225,6 +231,11 @@ table {
         --background2: hsl(0, 0%, 40%);
         --foreground1: hsl(0, 0%, 100%);
         --foreground2: hsl(0, 0%, 70%);
+
+        --background1--alpha: hsla(0, 0%, 10%, 0.5);
+        --background2--alpha: hsla(0, 0%, 40%, 0.5);
+        --foreground1--alpha: hsla(0, 0%, 100%, 0.5);
+        --foreground2--alpha: hsla(0, 0%, 70%, 0.5);
     }
 }
 
@@ -234,7 +245,7 @@ table {
 }
 
 html {
-    font-size: 16px
+    font-size: 100%;
 }
 
 body {
