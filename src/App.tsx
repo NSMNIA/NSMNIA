@@ -13,7 +13,7 @@ const App = (props: Props) => {
                 <Routes>
                     {routes.map((route, index) => {
                         return <Route key={index}
-                            path={route.path}
+                            path={`/NSMNIA${route.path}`}
                             element={<route.element />}
                         />
                     })}
