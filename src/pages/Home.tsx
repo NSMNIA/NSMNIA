@@ -27,7 +27,7 @@ const Home = (props: Props) => {
                         </div>
                     </div>
                     <div className={STYLE['work--social']}>
-                        <Link to="/resume" className={STYLE['work--social-link']}>
+                        <Link to="/NSMNIA/resume" className={STYLE['work--social-link']}>
                             <span>
                                 Resume
                             </span>
@@ -52,6 +52,7 @@ const Home = (props: Props) => {
                     </div>
                 </div>
             </div>
+            <div style={{ height: '200vh' }}></div>
         </>
     )
 }

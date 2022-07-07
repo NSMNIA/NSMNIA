@@ -20,7 +20,7 @@ const Navigation = (props: Props) => {
                     </svg>
                 </NavLink>
                 <div className={STYLE['sidebar--progress']}>
-                    <div className={STYLE['sidebar--progress-scrolled']} style={{ height: `${scrolled}%` }}></div>
+                    <div className={STYLE['sidebar--progress-scrolled']} style={{ ['--progress' as any]: `${scrolled}%` }}></div>
                 </div>
                 <div className={STYLE['sidebar--bottom']}>
                     <div className={STYLE['sidebar--links']}>
