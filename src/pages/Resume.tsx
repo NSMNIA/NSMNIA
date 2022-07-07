@@ -1,6 +1,10 @@
+import STYLE from '../assets/scss/resume.module.scss';
+
 const Resume = () => {
     return (
-        <div>Resume</div>
+        <div className={STYLE['resume']}>
+            Resume
+        </div>
     )
 }
 

@@ -1,7 +1,8 @@
 <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
     <style type="text/css">
         .black {
-            fill: #000;
+            fill: var(--accent);
+            transition: inherit;
         }
         .white {
             fill: #fff;
