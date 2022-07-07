@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import routes from "./config/Routes";
 import Error from "./pages/Error";
@@ -13,7 +13,7 @@ const App = (props: Props) => {
                 <Routes>
                     {routes.map((route, index) => {
                         return <Route key={index}
-                            path={`/NSMNIA${route.path}`}
+                            path={`/${route.path}`}
                             element={<route.element />}
                         />
                     })}

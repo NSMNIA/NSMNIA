@@ -27,7 +27,7 @@ const Home = (props: Props) => {
                         </div>
                     </div>
                     <div className={STYLE['work--social']}>
-                        <Link to="/NSMNIA/resume" className={STYLE['work--social-link']}>
+                        <Link to="/resume" className={STYLE['work--social-link']}>
                             <span>
                                 Resume
                             </span>

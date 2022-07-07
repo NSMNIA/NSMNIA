@@ -10,7 +10,7 @@ const Navigation = (props: Props) => {
     return (
         <div className={STYLE['sidebar']}>
             <div className={STYLE['sidebar--inner']}>
-                <NavLink to="/NSMNIA" className={STYLE["logo"]} aria-label="Home">
+                <NavLink to="/" className={STYLE["logo"]} aria-label="Home">
                     <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <title>Kevin Stoop</title>
                         <rect className={STYLE["black"]} width="40" height="40" />
@@ -24,10 +24,10 @@ const Navigation = (props: Props) => {
                 </div>
                 <div className={STYLE['sidebar--bottom']}>
                     <div className={STYLE['sidebar--links']}>
-                        <NavLink to="/NSMNIA" className={STYLE["sidebar--link"]}>
+                        <NavLink to="/" className={STYLE["sidebar--link"]}>
                             Work
                         </NavLink>
-                        <NavLink to="/NSMNIA/resume" className={STYLE["sidebar--link"]}>
+                        <NavLink to="/resume" className={STYLE["sidebar--link"]}>
                             Resume
                         </NavLink>
                     </div>
