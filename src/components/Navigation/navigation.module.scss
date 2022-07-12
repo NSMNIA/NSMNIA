@@ -163,6 +163,10 @@
     cursor: pointer;
     color: var(--foreground2);
 
+    @include media("<=1300px") {
+        transform: rotate(0);
+    }
+
     svg {
         width: 24px;
         height: 24px;

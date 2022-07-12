@@ -1,10 +1,17 @@
+@import '../../assets/scss/breakpoints';
+
 .work--projects-grid-item {
     height: 700px;
-    width: 700px;
+    max-width: 700px;
+    width: 100%;
     background: linear-gradient(150deg, var(--gradient-begin-color) 0%, var(--gradient-end-color) 100%);
     justify-self: start;
     position: relative;
     transition: transform .5s cubic-bezier(.5, -.5, .1, 1.5);
+
+    @include media("<=phone") {
+        height: 400px;
+    }
 
     &:nth-child(odd) {
         justify-self: end;
@@ -56,6 +63,11 @@
         transform-origin: left;
         margin-bottom: calc(80px + 1rem);
         color: var(--background2);
+
+        @include media("<=phone") {
+            opacity: 0;
+            display: none;
+        }
 
         &::before {
             content: '';
