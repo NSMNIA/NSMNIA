@@ -224,19 +224,17 @@ table {
     --max-width--padding: 2rem;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        color-scheme: dark;
-        --background1: hsl(0, 0%, 10%);
-        --background2: hsl(0, 0%, 40%);
-        --foreground1: hsl(0, 0%, 100%);
-        --foreground2: hsl(0, 0%, 70%);
+body.dark-mode {
+    color-scheme: dark;
+    --background1: hsl(0, 0%, 10%);
+    --background2: hsl(0, 0%, 40%);
+    --foreground1: hsl(0, 0%, 100%);
+    --foreground2: hsl(0, 0%, 70%);
 
-        --background1--alpha: hsla(0, 0%, 10%, 0.5);
-        --background2--alpha: hsla(0, 0%, 40%, 0.5);
-        --foreground1--alpha: hsla(0, 0%, 100%, 0.5);
-        --foreground2--alpha: hsla(0, 0%, 70%, 0.5);
-    }
+    --background1--alpha: hsla(0, 0%, 10%, 0.5);
+    --background2--alpha: hsla(0, 0%, 40%, 0.5);
+    --foreground1--alpha: hsla(0, 0%, 100%, 0.5);
+    --foreground2--alpha: hsla(0, 0%, 70%, 0.5);
 }
 
 ::selection {

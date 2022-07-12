@@ -112,7 +112,7 @@
 
     &--bottom {
         position: relative;
-        min-height: calc(136.25px + 2rem);
+        min-height: calc(194px + 2rem);
 
         @include media("<=1300px") {
             min-height: unset;
@@ -150,5 +150,21 @@
         &:hover {
             color: var(--accent);
         }
+    }
+}
+
+.switch-theme {
+    background: transparent;
+    transform: rotate(90deg);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--foreground2);
+
+    svg {
+        width: 24px;
+        height: 24px;
     }
 }
