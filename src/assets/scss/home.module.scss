@@ -11,7 +11,8 @@
     align-items: center;
 
     @include media("<=phone") {
-        height: 600px;
+        height: 560px;
+        padding-top: 2rem;
     }
 
     &--inner {
@@ -94,6 +95,8 @@
 
         @include media("<=phone") {
             justify-content: space-between;
+            display: grid;
+            grid-template-columns: 1fr;
         }
 
         &-link {
@@ -144,6 +147,19 @@
                 }
             }
         }
+    }
+}
+
+.work--projects {
+    max-width: var(--max-width);
+    padding: 10rem var(--max-width--padding);
+    margin: 0 auto;
+
+    &-grid {
+        display: grid;
+        gap: 10rem;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
     }
 }
 
