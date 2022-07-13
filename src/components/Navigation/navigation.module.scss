@@ -33,14 +33,14 @@
                 fill: var(--foreground1);
             }
 
-            @media (prefers-color-scheme: dark) {
-                .white {
-                    fill: hsl(0, 0%, 0%);
-                }
+            .white {
+                fill: var(--background1);
+                transition: inherit;
+            }
 
-                .white--stroke {
-                    stroke: hsl(0, 0%, 0%);
-                }
+            .white--stroke {
+                fill: var(--background1);
+                transition: inherit;
             }
         }
     }
@@ -57,6 +57,7 @@
     @include media("<=1300px") {
         width: 100%;
         height: auto;
+        background-color: var(--background1--alpha);
     }
 
     &--inner {
@@ -147,6 +148,10 @@
         line-height: 1.375;
         letter-spacing: 0.2px;
 
+        @include media("<=1300px") {
+            color: var(--foreground1);
+        }
+
         &:hover {
             color: var(--accent);
         }
@@ -162,6 +167,10 @@
     justify-content: center;
     cursor: pointer;
     color: var(--foreground2);
+
+    @include media("<=1300px") {
+        color: var(--foreground1);
+    }
 
     @include media("<=1300px") {
         transform: rotate(0);

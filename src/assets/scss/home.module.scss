@@ -160,6 +160,10 @@
         gap: 10rem;
         margin: 0 auto;
         grid-template-columns: 1fr;
+
+        @include media("<=phone") {
+            gap: 12rem;
+        }
     }
 }
 
