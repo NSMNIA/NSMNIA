@@ -1,8 +1,12 @@
+import { useEffect } from 'react';
 import STYLE from './hero.module.scss';
 
 type Props = {}
 
 const Hero = (props: Props) => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
     return (
         <div className={STYLE["hero"]}>
             <div className={STYLE["hero--inner"]}>

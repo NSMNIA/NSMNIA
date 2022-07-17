@@ -1,3 +1,5 @@
+@import "./breakpoints";
+
 /* inter-300 - latin */
 @font-face {
     font-family: 'Inter';
@@ -262,6 +264,12 @@ body.dark-mode {
     color: var(--foreground2);
 }
 
+@include media("<=1300px") {
+    :root {
+        --max-width: calc(800px + 4rem);
+    }
+}
+
 html {
     font-size: 100%;
 }
@@ -313,4 +321,21 @@ h5 {
 small,
 .text_small {
     font-size: .8rem
+}
+
+.container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--max-width--padding);
+}
+
+.link {
+    color: var(--accent--lighter);
+    text-decoration: none;
+    transition: color .2s ease-in-out;
+
+    &:hover {
+        color: var(--accent);
+    }
 }

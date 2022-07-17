@@ -7,7 +7,7 @@
         width: calc(var(--max-width) + var(--scroll-width));
         min-width: var(--max-width);
         overflow: hidden;
-        margin: auto;
+        margin: 4rem auto;
         max-width: 100%;
 
         @include media(">=LGdesktop") {

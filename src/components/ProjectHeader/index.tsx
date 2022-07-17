@@ -43,7 +43,6 @@ const ProjectHeader: FC<IProjectHeader> = ({ title, description, image, video })
                     <source src={video} type="video/mp4" />
                 </video>
             </div>
-            <div style={{ height: '3000px' }}></div>
         </div>
     )
 }
