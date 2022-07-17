@@ -27,6 +27,7 @@
         h2 {
             color: var(--foreground2);
             margin: 0;
+            font-weight: 300;
         }
 
         @include media("<=phone") {
