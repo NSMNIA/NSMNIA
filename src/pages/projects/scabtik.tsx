@@ -54,7 +54,7 @@ const ProjectScabtik = () => {
                     </div>
                 </div>
 
-                <ProjectFooter previousProject={'scabtik'} nextProject={'crm-system'} />
+                <ProjectFooter previousProject={'vvd'} nextProject={'crm-system'} />
             </div>
         </>
     )
