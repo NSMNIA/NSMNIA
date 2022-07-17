@@ -5,6 +5,7 @@ import ProjectPIM from "../pages/projects/pim";
 import ProjectPraktijk212 from "../pages/projects/praktijk212";
 import ProjectRFCMaastricht from "../pages/projects/rfcmaastricht";
 import ProjectScabtik from "../pages/projects/scabtik";
+import ProjectStreamly from "../pages/projects/streamly";
 import ProjectVVD from "../pages/projects/vvd";
 import Resume from "../pages/Resume";
 
@@ -33,6 +34,9 @@ const routes: IRoute[] = [
     }, {
         path: '/pim-system',
         element: ProjectPIM
+    }, {
+        path: "/streamly",
+        element: ProjectStreamly
     }
 ];
 
