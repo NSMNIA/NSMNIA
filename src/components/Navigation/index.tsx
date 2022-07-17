@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import useScrollingPos from "../../hooks/useScrollingPos";
 import STYLE from './navigation.module.scss';
@@ -7,7 +7,12 @@ type Props = {}
 
 const Navigation = (props: Props) => {
     const scrolled = useScrollingPos();
-    const [theme, setTheme] = useState<string>(sessionStorage.getItem('theme') || 'light');
+    const [theme, setTheme] = useState<any>(sessionStorage.getItem('theme') === null ? (document.body.classList.contains('dark-mode') ? 'dark' : 'light') : sessionStorage.getItem('theme'));
+
+    useEffect(() => {
+        setTheme(sessionStorage.getItem('theme') === null ? (document.body.classList.contains('dark-mode') ? 'dark' : 'light') : sessionStorage.getItem('theme'));
+    }, [theme]);
+
 
     const switchTheme = () => {
         if (theme === 'light') {

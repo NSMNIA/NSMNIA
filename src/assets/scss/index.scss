@@ -377,6 +377,11 @@ small,
             z-index: 9;
             padding: 1ch 1.5ch;
             font-weight: 400;
+            transition: background-color .17s ease-in-out;
+
+            &:hover {
+                background-color: var(--accent--lighter);
+            }
         }
 
         .error--code {

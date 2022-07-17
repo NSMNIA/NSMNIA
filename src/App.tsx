@@ -8,7 +8,7 @@ type Props = {}
 
 const App = (props: Props) => {
     useEffect(() => {
-        if (sessionStorage.getItem('theme') === null) {
+        if (!sessionStorage.getItem('theme')) {
             if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
                 document.body.classList.add('dark-mode');
                 sessionStorage.setItem('theme', 'dark');
