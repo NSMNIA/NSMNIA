@@ -1,0 +1,59 @@
+@import "../../assets/scss/breakpoints";
+
+.project--header {
+    width: 100%;
+
+    &-video {
+        width: calc(var(--max-width) + var(--scroll-width));
+        min-width: var(--max-width);
+        overflow: hidden;
+        margin: auto;
+        max-width: 100%;
+
+        @include media(">=LGdesktop") {
+            max-width: calc(var(--max-width) + 300px);
+        }
+
+        @include media("<=1300px") {
+            width: 100%;
+            min-width: 100%;
+        }
+
+
+        video {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &-scrollindicator {
+        width: 100%;
+        max-width: var(--max-width);
+        padding: 0 var(--max-width--padding);
+        margin: 0 auto 3rem;
+    }
+
+    &-inner {
+        max-height: 900px;
+        height: 80vh;
+        width: 100%;
+        max-width: var(--max-width);
+        padding: 0 var(--max-width--padding);
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+
+        h1 {
+            margin: 0;
+            color: var(--foreground2);
+            font-weight: 300;
+            font-size: 2rem;
+
+            span {
+                color: var(--foreground1);
+            }
+
+            width: 80%;
+        }
+    }
+}

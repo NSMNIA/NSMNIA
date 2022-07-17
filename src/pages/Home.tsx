@@ -17,32 +17,18 @@ import ImageVVD from '../assets/images/projects/vvd/index.webp';
 import ImageWhereAmI from '../assets/images/projects/whereami/index.webp';
 import STYLE from '../assets/scss/home.module.scss';
 import CaseItem from '../components/CaseItem';
+import Hero from '../components/Hero';
+import ScrollIndicator from '../components/ScrollIndicator';
 
 type Props = {}
 
 const Home = (props: Props) => {
     return (
         <>
-            <div className={STYLE["hero"]}>
-                <div className={STYLE["hero--inner"]}>
-                    <h1>
-                        Kevin Stoop — Webdeveloper
-                    </h1>
-                    <h2>
-                        passionate about digital products that help people experience everyday life, not endure it.
-                    </h2>
-                </div>
-            </div>
+            <Hero />
             <div className={STYLE['work']}>
                 <div className={STYLE['work--grid']}>
-                    <div className={STYLE['work--selected']}>
-                        <div className={STYLE['work--selected-title']}>
-                            Cases
-                        </div>
-                        <div className={STYLE['work--selected-bar']}>
-                            <div className={STYLE['work--selected-bar-animation']}></div>
-                        </div>
-                    </div>
+                    <ScrollIndicator title="Cases" />
                     <div className={STYLE['work--social']}>
                         <Link to="/resume" className={STYLE['work--social-link']}>
                             <span>

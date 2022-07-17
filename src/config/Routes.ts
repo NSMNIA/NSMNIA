@@ -1,5 +1,6 @@
 import IRoute from "../interfaces/Routes";
 import Home from "../pages/Home";
+import ProjectCRM from "../pages/projects/crm";
 import Resume from "../pages/Resume";
 
 const routes: IRoute[] = [
@@ -9,6 +10,9 @@ const routes: IRoute[] = [
     }, {
         path: '/resume',
         element: Resume
+    }, {
+        path: '/crm-system',
+        element: ProjectCRM
     }
 ];
 

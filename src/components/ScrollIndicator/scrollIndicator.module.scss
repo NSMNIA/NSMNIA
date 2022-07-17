@@ -1,0 +1,44 @@
+.scroll-indicator {
+    &--title {
+        color: var(--foreground1);
+        font-weight: 300;
+        font-size: 1.125rem;
+    }
+
+    &--bar {
+        margin-top: .5rem;
+        height: 70px;
+        width: 1px;
+        background-color: var(--background2);
+        position: relative;
+        overflow: hidden;
+        border-radius: 5555px;
+        margin-left: .5rem;
+
+        &-animation {
+            border-radius: 5555px;
+            background-color: var(--accent);
+            width: 3px;
+            height: 40%;
+            position: absolute;
+            bottom: -5px;
+            left: -1px;
+            transform-origin: bottom;
+            animation: scrollIndicator;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+    }
+}
+
+@keyframes scrollIndicator {
+    0% {
+        transform: translateY(-170px);
+    }
+
+
+    100% {
+        transform: translateY(230px);
+    }
+}
