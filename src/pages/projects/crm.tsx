@@ -2,10 +2,13 @@ import STYLE from '../../assets/scss/project.module.scss';
 import ProjectFooter from '../../components/ProjectFooter';
 import ProjectHeader from "../../components/ProjectHeader";
 
+import Video from '../../assets/images/projects/crm/crm.mp4';
+import Image from '../../assets/images/projects/crm/index.webp';
+
 const ProjectCRM = () => {
     return (
         <>
-            <ProjectHeader title="CRM" description="is a Contact Management System. It helps you to manage your customer data. It can also be used for sending quotes and invoices." image="/src/assets/images/projects/crm/index.webp" video="/src/assets/images/projects/crm/crm.mp4" />
+            <ProjectHeader title="CRM" description="is a Contact Management System. It helps you to manage your customer data. It can also be used for sending quotes and invoices." image={Image} video={Video} />
 
             <div className="container">
                 <div className={STYLE["project-information"]}>

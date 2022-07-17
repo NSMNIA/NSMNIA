@@ -70,7 +70,7 @@ const Home = (props: Props) => {
                 <div className={STYLE['work--projects-grid']}>
                     <CaseItem title="CRM-system" description='Helps you to manage your customer data.' image={ImageCRM} link="/crm-system" gradientBeginColor="rgb(1, 87, 208)" gradientEndColor="rgb(255,255,255)" />
 
-                    <CaseItem title="Scabtik" description='Website for an upcoming Hardstyle artist.' image={ImageScabtik2022} link="/scabtik-2022" gradientBeginColor="rgb(171, 129, 95)" gradientEndColor="rgb(30, 30, 30)" />
+                    <CaseItem title="Scabtik" description='Website for an upcoming Hardstyle artist.' image={ImageScabtik2022} link="/scabtik" gradientBeginColor="rgb(171, 129, 95)" gradientEndColor="rgb(30, 30, 30)" />
 
                     <CaseItem title="VVD-kieswijzer" description='Personal election guide for the municipal elections of a political party.' image={ImageVVD} link="/vvd" gradientBeginColor="rgb(255, 100, 0)" gradientEndColor="rgb(10, 44, 202)" />
 

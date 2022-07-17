@@ -48,12 +48,15 @@
             color: var(--foreground2);
             font-weight: 300;
             font-size: 2rem;
+            width: 80%;
 
             span {
                 color: var(--foreground1);
             }
 
-            width: 80%;
+            @include media("<=tablet") {
+                width: 100%;
+            }
         }
     }
 }

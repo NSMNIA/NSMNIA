@@ -1,6 +1,7 @@
 import IRoute from "../interfaces/Routes";
 import Home from "../pages/Home";
 import ProjectCRM from "../pages/projects/crm";
+import ProjectScabtik from "../pages/projects/scabtik";
 import Resume from "../pages/Resume";
 
 const routes: IRoute[] = [
@@ -13,6 +14,9 @@ const routes: IRoute[] = [
     }, {
         path: '/crm-system',
         element: ProjectCRM
+    }, {
+        path: '/scabtik',
+        element: ProjectScabtik
     }
 ];
 

@@ -1,4 +1,4 @@
-import { CSSProperties, FC, useEffect, useState } from 'react';
+import { CSSProperties, FC, useEffect, useRef, useState } from 'react';
 import ScrollIndicator from '../ScrollIndicator';
 import STYLE from './projectHeader.module.scss';
 
@@ -11,14 +11,18 @@ interface IProjectHeader {
 
 const ProjectHeader: FC<IProjectHeader> = ({ title, description, image, video }) => {
     const [scrollWidth, setScrollWidth] = useState<string>('0px');
+    const videoRef = useRef<HTMLVideoElement>(null);
 
 
     useEffect(() => {
         window.scrollTo(0, 0);
+        videoRef.current?.play();
         const updateScrollCompletion = () => {
             const scrollProgress = window.scrollY;
+            let extra = 400;
+            if (window.innerWidth > 1920) extra = 150;
             if (scrollProgress > 0) {
-                setScrollWidth(`${window.scrollY - 150}px`);
+                setScrollWidth(`${window.scrollY - extra}px`);
             }
         }
         window.addEventListener('scroll', updateScrollCompletion);
@@ -39,7 +43,7 @@ const ProjectHeader: FC<IProjectHeader> = ({ title, description, image, video })
                 <ScrollIndicator title={title} />
             </div>
             <div className={STYLE["project--header-video"]} style={{ "--scroll-width": scrollWidth } as CSSProperties}>
-                <video autoPlay placeholder={image} loop muted>
+                <video ref={videoRef} autoPlay placeholder={image} loop muted>
                     <source src={video} type="video/mp4" />
                 </video>
             </div>

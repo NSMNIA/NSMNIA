@@ -1,11 +1,18 @@
+@import "../../assets/scss/breakpoints";
+
 .footer {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 4rem 0 2rem;
-    padding: 2rem;
+    padding: 2rem 0;
     border-top: 1px solid var(--background2);
+
+    @include media("<=phone") {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
     &--links {
         display: flex;
@@ -13,12 +20,16 @@
         width: 100%;
         margin: 0 auto;
         gap: 2rem;
+
+        @include media("<=phone") {
+            justify-content: space-between;
+        }
     }
 
     &--link {
         display: flex;
         align-items: center;
-        gap: 1rem;
+        gap: .5rem;
         color: var(--foreground1);
         transition: color .3s ease-in-out;
         position: relative;
@@ -32,16 +43,20 @@
         }
 
         &:nth-child(2) {
-            margin-left: 1rem;
+            text-align: right;
 
-            &::before {
-                content: '';
-                width: 1px;
-                height: 100%;
-                background-color: var(--background2);
-                position: absolute;
-                left: -1.5rem;
-                top: 0;
+            @include media(">phone") {
+                margin-left: 1rem;
+
+                &::before {
+                    content: '';
+                    width: 1px;
+                    height: 100%;
+                    background-color: var(--background2);
+                    position: absolute;
+                    left: -1.5rem;
+                    top: 0;
+                }
             }
         }
     }
@@ -50,6 +65,10 @@
         width: 40px;
         height: 40px;
 
+        @include media("<=phone") {
+            margin: 3rem auto 0;
+        }
+
         &-background {
             color: var(--foreground1);
             transition: color .3s ease-in-out;
@@ -57,11 +76,16 @@
 
         &-foreground {
             color: var(--background1);
+            transition: color .3s ease-in-out;
         }
 
         &:hover {
             .footer--logo-background {
                 color: var(--accent);
+            }
+
+            .footer--logo-foreground {
+                color: hsl(0, 0%, 100%);
             }
         }
     }

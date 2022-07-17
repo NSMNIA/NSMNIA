@@ -7,7 +7,7 @@ interface IError {
 
 const Error: FC<IError> = ({ message, status }) => {
     return (
-        <div>
+        <div className="container">
             <h1>{status}</h1>
             <h2>{message}</h2>
         </div>
