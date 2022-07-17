@@ -43,7 +43,7 @@ const ProjectVVD = () => {
                         </h2>
                         <div className={STYLE["project-information--list"]}>
                             <span>
-                                Coding the website from scratch.
+                                Coding the website from scratch. Created with PHP, HTML, CSS and TypeScript.
                             </span>
                         </div>
                     </div>

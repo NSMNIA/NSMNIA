@@ -33,12 +33,9 @@ const ProjectCRM = () => {
                         </h2>
                         <div className={STYLE["project-information--list"]}>
                             <span>
-                                Independent
-                            </span>
-                            <span>
-                                Made for <a target={"_blank"} className='link' href="https://companyfuel.nl">
+                                Independent (Freelance project for <a target={"_blank"} className='link' href="https://companyfuel.nl">
                                     Company Fuel
-                                </a>
+                                </a>)
                             </span>
                         </div>
                     </div>
