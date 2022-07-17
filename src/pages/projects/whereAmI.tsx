@@ -2,13 +2,13 @@ import STYLE from '../../assets/scss/project.module.scss';
 import ProjectFooter from '../../components/ProjectFooter';
 import ProjectHeader from "../../components/ProjectHeader";
 
-import Image from '../../assets/images/projects/streamly/index.webp';
-import Video from '../../assets/images/projects/streamly/streamly2.mp4';
+import Image from '../../assets/images/projects/whereami/index.webp';
+import Video from '../../assets/images/projects/whereami/whereami.mp4';
 
-const ProjectStreamly = () => {
+const ProjectWhereAmI = () => {
     return (
         <>
-            <ProjectHeader title="Streamly" description="is a WebApp that shows the offer of the online festivals in the lockdown of Covid-19." image={Image} video={Video} />
+            <ProjectHeader title="Where Am I?" description="is a game where you have to guess where you were dropped." image={Image} video={Video} />
 
             <div className="container">
                 <div className={STYLE["project-information"]}>
@@ -18,13 +18,13 @@ const ProjectStreamly = () => {
                         </h2>
                         <div className={STYLE["project-information--list"]}>
                             <span>
-                                April 2020 (2 weeks)
+                                March 2020 (1 day)
                             </span>
                             <span>
                                 Schoolproject
                             </span>
                             <span>
-                                Develop concept
+                                Challenge
                             </span>
                         </div>
                     </div>
@@ -44,16 +44,16 @@ const ProjectStreamly = () => {
                         </h2>
                         <div className={STYLE["project-information--list"]}>
                             <span>
-                                Coded the webapp from scratch. Created with PHP, HTML, CSS and JavaScript.
+                                Coded the game from scratch with the Google Maps API. Created with HTML, CSS and JavaScript.
                             </span>
                         </div>
                     </div>
                 </div>
 
-                <ProjectFooter previousProject={'where-am-i'} nextProject={'pim-system'} />
+                <ProjectFooter previousProject={'de-berkt'} nextProject={'streamly'} />
             </div>
         </>
     )
 }
 
-export default ProjectStreamly
+export default ProjectWhereAmI

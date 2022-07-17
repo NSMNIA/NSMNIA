@@ -7,6 +7,7 @@ import ProjectRFCMaastricht from "../pages/projects/rfcmaastricht";
 import ProjectScabtik from "../pages/projects/scabtik";
 import ProjectStreamly from "../pages/projects/streamly";
 import ProjectVVD from "../pages/projects/vvd";
+import ProjectWhereAmI from "../pages/projects/whereAmI";
 import Resume from "../pages/Resume";
 
 const routes: IRoute[] = [
@@ -37,6 +38,9 @@ const routes: IRoute[] = [
     }, {
         path: "/streamly",
         element: ProjectStreamly
+    }, {
+        path: '/where-am-i',
+        element: ProjectWhereAmI
     }
 ];
 
