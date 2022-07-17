@@ -1,6 +1,10 @@
 import IRoute from "../interfaces/Routes";
 import Home from "../pages/Home";
 import ProjectCRM from "../pages/projects/crm";
+import ProjectDeBerkt from "../pages/projects/deberkt";
+import ProjectDeGegrildeBuffel from "../pages/projects/degegrildebuffel";
+import ProjectLevelCoaching from "../pages/projects/levelcoaching";
+import ProjectNobinh from "../pages/projects/nobinh";
 import ProjectPIM from "../pages/projects/pim";
 import ProjectPraktijk212 from "../pages/projects/praktijk212";
 import ProjectRFCMaastricht from "../pages/projects/rfcmaastricht";
@@ -41,6 +45,18 @@ const routes: IRoute[] = [
     }, {
         path: '/where-am-i',
         element: ProjectWhereAmI
+    }, {
+        path: '/de-berkt',
+        element: ProjectDeBerkt
+    }, {
+        path: '/nobinh',
+        element: ProjectNobinh
+    }, {
+        path: '/level-coaching',
+        element: ProjectLevelCoaching
+    }, {
+        path: '/de-gegrilde-buffel',
+        element: ProjectDeGegrildeBuffel
     }
 ];
 
