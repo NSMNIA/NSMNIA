@@ -39,11 +39,11 @@ const ProjectVVD = () => {
                     </div>
                     <div>
                         <h2 className={STYLE["project-information--title"]}>
-                            Responsibilities
+                            Description
                         </h2>
                         <div className={STYLE["project-information--list"]}>
                             <span>
-                                Coding the website from scratch. Created with PHP, HTML, CSS and TypeScript.
+                                Coded the website from scratch. Created with PHP, HTML, CSS and TypeScript.
                             </span>
                         </div>
                     </div>

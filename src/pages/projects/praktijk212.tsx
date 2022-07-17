@@ -39,11 +39,11 @@ const ProjectPraktijk212 = () => {
                     </div>
                     <div>
                         <h2 className={STYLE["project-information--title"]}>
-                            Responsibilities
+                            Description
                         </h2>
                         <div className={STYLE["project-information--list"]}>
                             <span>
-                                Coding the website from scratch. Created with PHP, HTML, CSS and JavaScript.
+                                Coded the website from scratch. Created with PHP, HTML, CSS and JavaScript.
                             </span>
                         </div>
                     </div>

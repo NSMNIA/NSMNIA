@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { Link } from "react-router-dom";
 
 interface IError {
     message: string;
@@ -8,8 +9,15 @@ interface IError {
 const Error: FC<IError> = ({ message, status }) => {
     return (
         <div className="container">
-            <h1>{status}</h1>
-            <h2>{message}</h2>
+            <div className="error">
+                <div className="error--inner">
+                    <h1 className="error--title">{message}</h1>
+                    <Link className="btn" to="/">
+                        Return to the homepage
+                    </Link>
+                    <div className="error--code">{status}</div>
+                </div>
+            </div>
         </div>
     )
 }

@@ -22,7 +22,10 @@ const ProjectHeader: FC<IProjectHeader> = ({ title, description, image, video })
             let extra = 400;
             if (window.innerWidth > 1920) extra = 150;
             if (scrollProgress > 0) {
-                setScrollWidth(`${window.scrollY - extra}px`);
+                let custom = window.scrollY - extra;
+                if (custom < 0) custom = 0;
+                if (custom > 500) custom = 500;
+                setScrollWidth(`${custom}px`);
             }
         }
         window.addEventListener('scroll', updateScrollCompletion);

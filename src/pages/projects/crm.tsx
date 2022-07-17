@@ -41,7 +41,7 @@ const ProjectCRM = () => {
                     </div>
                     <div>
                         <h2 className={STYLE["project-information--title"]}>
-                            Responsibilities
+                            Description
                         </h2>
                         <div className={STYLE["project-information--list"]}>
                             <span>
