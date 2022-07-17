@@ -49,7 +49,7 @@ const ProjectLevelCoaching = () => {
                     </div>
                 </div>
 
-                <ProjectFooter previousProject={'nobinh'} nextProject={'de-gegrilde-buffel'} />
+                <ProjectFooter previousProject={'de-gegrilde-buffel'} nextProject={'nobinh'} />
             </div>
         </>
     )

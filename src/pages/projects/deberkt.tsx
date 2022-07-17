@@ -33,7 +33,9 @@ const ProjectDeBerkt = () => {
                         </h2>
                         <div className={STYLE["project-information--list"]}>
                             <span>
-                                Independent
+                                <a href="https://www.behance.net/tommenomnom" target={"_blank"} className="link">
+                                    Tom Bergman
+                                </a> (Design)
                             </span>
                         </div>
                     </div>
@@ -49,7 +51,7 @@ const ProjectDeBerkt = () => {
                     </div>
                 </div>
 
-                <ProjectFooter previousProject={'nobinh'} nextProject={'de-berkt'} />
+                <ProjectFooter previousProject={'nobinh'} nextProject={'where-am-i'} />
             </div>
         </>
     )

@@ -1,12 +1,16 @@
 import IRoute from "../interfaces/Routes";
 import Home from "../pages/Home";
+import ProjectBetonboringenGeffen from "../pages/projects/betonboringengeffen";
 import ProjectCRM from "../pages/projects/crm";
 import ProjectDeBerkt from "../pages/projects/deberkt";
 import ProjectDeGegrildeBuffel from "../pages/projects/degegrildebuffel";
+import ProjectGewoonSamen from "../pages/projects/gewoonsamen";
+import ProjectKappersVanNu from "../pages/projects/kappersvannu";
 import ProjectLevelCoaching from "../pages/projects/levelcoaching";
 import ProjectNobinh from "../pages/projects/nobinh";
 import ProjectPIM from "../pages/projects/pim";
 import ProjectPraktijk212 from "../pages/projects/praktijk212";
+import ProjectRedMijnScriptie from "../pages/projects/redmijnscriptie";
 import ProjectRFCMaastricht from "../pages/projects/rfcmaastricht";
 import ProjectScabtik from "../pages/projects/scabtik";
 import ProjectStreamly from "../pages/projects/streamly";
@@ -57,6 +61,18 @@ const routes: IRoute[] = [
     }, {
         path: '/de-gegrilde-buffel',
         element: ProjectDeGegrildeBuffel
+    }, {
+        path: '/gewoon-samen',
+        element: ProjectGewoonSamen
+    }, {
+        path: '/betonboringen-geffen',
+        element: ProjectBetonboringenGeffen
+    }, {
+        path: '/red-mijn-scriptie',
+        element: ProjectRedMijnScriptie
+    }, {
+        path: "/kappers-van-nu",
+        element: ProjectKappersVanNu
     }
 ];
 
