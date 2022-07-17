@@ -260,8 +260,8 @@ body.dark-mode {
 }
 
 ::selection {
-    background: var(--background2);
-    color: var(--foreground2);
+    background: var(--background2--alpha);
+    color: var(--accent);
 }
 
 @include media("<=1300px") {

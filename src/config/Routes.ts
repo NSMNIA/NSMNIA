@@ -1,6 +1,7 @@
 import IRoute from "../interfaces/Routes";
 import Home from "../pages/Home";
 import ProjectCRM from "../pages/projects/crm";
+import ProjectPIM from "../pages/projects/pim";
 import ProjectPraktijk212 from "../pages/projects/praktijk212";
 import ProjectRFCMaastricht from "../pages/projects/rfcmaastricht";
 import ProjectScabtik from "../pages/projects/scabtik";
@@ -29,6 +30,9 @@ const routes: IRoute[] = [
     }, {
         path: '/rfc-maastricht',
         element: ProjectRFCMaastricht
+    }, {
+        path: '/pim-system',
+        element: ProjectPIM
     }
 ];
 
