@@ -3,7 +3,7 @@ import ProjectFooter from '../../components/ProjectFooter';
 import ProjectHeader from "../../components/ProjectHeader";
 
 import Image from '../../assets/images/projects/whereami/index.webp';
-import Video from '../../assets/images/projects/whereami/whereami.mp4';
+import Video from '../../assets/images/projects/whereami/whereami.webm';
 
 const ProjectWhereAmI = () => {
     return (

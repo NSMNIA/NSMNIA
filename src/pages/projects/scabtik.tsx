@@ -3,7 +3,7 @@ import ProjectFooter from '../../components/ProjectFooter';
 import ProjectHeader from "../../components/ProjectHeader";
 
 import Image from '../../assets/images/projects/scabtik2022/index.webp';
-import Video from '../../assets/images/projects/scabtik2022/scabtik.mp4';
+import Video from '../../assets/images/projects/scabtik2022/scabtik.webm';
 
 const ProjectScabtik = () => {
     return (

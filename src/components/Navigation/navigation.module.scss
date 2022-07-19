@@ -7,7 +7,7 @@
 
     svg {
         width: 40px;
-        transition-property: fill stroke;
+        transition-property: fill, stroke;
         transition-duration: .3s;
         transition-timing-function: ease-in-out;
 

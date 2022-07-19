@@ -3,7 +3,7 @@ import ProjectFooter from '../../components/ProjectFooter';
 import ProjectHeader from "../../components/ProjectHeader";
 
 import Image from '../../assets/images/projects/vvd/index.webp';
-import Video from '../../assets/images/projects/vvd/vvd.mp4';
+import Video from '../../assets/images/projects/vvd/vvd.webm';
 
 const ProjectVVD = () => {
     return (

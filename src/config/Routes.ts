@@ -1,5 +1,4 @@
 import IRoute from "../interfaces/Routes";
-import Home from "../pages/Home";
 import ProjectBetonboringenGeffen from "../pages/projects/betonboringengeffen";
 import ProjectCRM from "../pages/projects/crm";
 import ProjectDeBerkt from "../pages/projects/deberkt";
@@ -17,14 +16,15 @@ import ProjectStreamly from "../pages/projects/streamly";
 import ProjectVVD from "../pages/projects/vvd";
 import ProjectWhereAmI from "../pages/projects/whereAmI";
 import Resume from "../pages/Resume";
+import Work from "../pages/Work";
 
 const routes: IRoute[] = [
     {
         path: '/',
-        element: Home
-    }, {
-        path: '/resume',
         element: Resume
+    }, {
+        path: '/work',
+        element: Work
     }, {
         path: '/crm-system',
         element: ProjectCRM

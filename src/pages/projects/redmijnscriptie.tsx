@@ -3,7 +3,7 @@ import ProjectFooter from '../../components/ProjectFooter';
 import ProjectHeader from "../../components/ProjectHeader";
 
 import Image from '../../assets/images/projects/redmijnscriptie/index.webp';
-import Video from '../../assets/images/projects/redmijnscriptie/redmijnscriptie.mp4';
+import Video from '../../assets/images/projects/redmijnscriptie/redmijnscriptie.webm';
 
 const ProjectRedMijnScriptie = () => {
     return (

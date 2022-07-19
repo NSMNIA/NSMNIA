@@ -37,16 +37,16 @@ const ProjectHeader: FC<IProjectHeader> = ({ title, description, image, video })
 
     return (
         <div className={STYLE["project--header"]}>
-            <div className={STYLE["project--header-inner"]}>
+            <div className={`${STYLE["project--header-inner"]} animate--init`}>
                 <h1>
                     <span>{title}</span> {description}
                 </h1>
             </div>
-            <div className={STYLE['project--header-scrollindicator']}>
+            <div className={`${STYLE['project--header-scrollindicator']} animate--second`}>
                 <ScrollIndicator title={title} />
             </div>
-            <div className={STYLE["project--header-video"]} style={{ "--scroll-width": scrollWidth } as CSSProperties}>
-                <video ref={videoRef} autoPlay placeholder={image} loop muted>
+            <div className={`${STYLE["project--header-video"]} animate--third`} style={{ "--scroll-width": scrollWidth } as CSSProperties}>
+                <video ref={videoRef} autoPlay placeholder={image} disableRemotePlayback loop muted>
                     <source src={video} type="video/mp4" />
                 </video>
             </div>

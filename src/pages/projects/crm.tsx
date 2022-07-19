@@ -2,7 +2,7 @@ import STYLE from '../../assets/scss/project.module.scss';
 import ProjectFooter from '../../components/ProjectFooter';
 import ProjectHeader from "../../components/ProjectHeader";
 
-import Video from '../../assets/images/projects/crm/crm.mp4';
+import Video from '../../assets/images/projects/crm/crm.webm';
 import Image from '../../assets/images/projects/crm/index.webp';
 
 const ProjectCRM = () => {

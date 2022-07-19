@@ -3,7 +3,7 @@ import ProjectFooter from '../../components/ProjectFooter';
 import ProjectHeader from "../../components/ProjectHeader";
 
 import Image from '../../assets/images/projects/pim/index.webp';
-import Video from '../../assets/images/projects/pim/PIM.mp4';
+import Video from '../../assets/images/projects/pim/PIM.webm';
 
 const ProjectPIM = () => {
     return (

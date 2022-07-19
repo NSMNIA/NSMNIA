@@ -260,8 +260,8 @@ body.dark-mode {
 }
 
 ::selection {
-    background: var(--background2--alpha);
-    color: var(--accent);
+    color: var(--accent--darker);
+    background: var(--accent--lighter)
 }
 
 @include media("<=1300px") {
@@ -403,5 +403,60 @@ small,
             user-select: none;
 
         }
+    }
+}
+
+.animate--init {
+    animation-name: fadeInView;
+    animation-duration: .7s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(.3, 0, .5, 1);
+}
+
+.animate--second {
+    animation: animation-2nd .8s linear;
+}
+
+.animate--third {
+    animation: animation-3rd 1s linear;
+}
+
+@keyframes fadeInView {
+    0% {
+        transform: translate3d(0, 30px, 0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes animation-2nd {
+
+    0%,
+    75% {
+        opacity: 0;
+        transform: translate3d(0, 20px, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes animation-3rd {
+
+    0%,
+    80% {
+        opacity: 0;
+        transform: translate3d(0, 20px, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
     }
 }

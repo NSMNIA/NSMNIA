@@ -3,7 +3,7 @@ import ProjectFooter from '../../components/ProjectFooter';
 import ProjectHeader from "../../components/ProjectHeader";
 
 import Image from '../../assets/images/projects/rfcmaastricht/index.webp';
-import Video from '../../assets/images/projects/rfcmaastricht/rfcmaastricht.mp4';
+import Video from '../../assets/images/projects/rfcmaastricht/rfcmaastricht.webm';
 
 const ProjectRFCMaastricht = () => {
     return (

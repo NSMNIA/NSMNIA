@@ -43,10 +43,10 @@ const Navigation = (props: Props) => {
                 <div className={STYLE['sidebar--bottom']}>
                     <div className={STYLE['sidebar--links']}>
                         <NavLink to="/" className={STYLE["sidebar--link"]}>
-                            Work
-                        </NavLink>
-                        <NavLink to="/resume" className={STYLE["sidebar--link"]}>
                             Resume
+                        </NavLink>
+                        <NavLink to="/work" className={STYLE["sidebar--link"]}>
+                            Work
                         </NavLink>
                         <button className={STYLE['switch-theme']} aria-label="Toggle light/dark mode" onClick={switchTheme}>
                             {theme === 'dark' ? <>

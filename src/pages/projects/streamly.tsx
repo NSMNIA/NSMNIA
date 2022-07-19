@@ -3,7 +3,7 @@ import ProjectFooter from '../../components/ProjectFooter';
 import ProjectHeader from "../../components/ProjectHeader";
 
 import Image from '../../assets/images/projects/streamly/index.webp';
-import Video from '../../assets/images/projects/streamly/streamly2.mp4';
+import Video from '../../assets/images/projects/streamly/streamly2.webm';
 
 const ProjectStreamly = () => {
     return (

@@ -3,7 +3,7 @@ import ProjectFooter from '../../components/ProjectFooter';
 import ProjectHeader from "../../components/ProjectHeader";
 
 import Image from '../../assets/images/projects/levelcoaching/index.webp';
-import Video from '../../assets/images/projects/levelcoaching/levelcoaching.mp4';
+import Video from '../../assets/images/projects/levelcoaching/levelcoaching.webm';
 
 const ProjectLevelCoaching = () => {
     return (
