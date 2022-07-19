@@ -414,11 +414,19 @@ small,
 }
 
 .animate--second {
-    animation: animation-2nd .8s linear;
+    animation-name: animation-2nd;
+    animation-duration: .7s;
+    animation-delay: .4s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(.3, 0, .5, 1);
 }
 
 .animate--third {
-    animation: animation-3rd 1s linear;
+    animation-name: animation-3rd;
+    animation-duration: .7s;
+    animation-delay: .8s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(.3, 0, .5, 1);
 }
 
 @keyframes fadeInView {
@@ -435,8 +443,7 @@ small,
 
 @keyframes animation-2nd {
 
-    0%,
-    75% {
+    0% {
         opacity: 0;
         transform: translate3d(0, 20px, 0);
     }
@@ -449,8 +456,7 @@ small,
 
 @keyframes animation-3rd {
 
-    0%,
-    80% {
+    0% {
         opacity: 0;
         transform: translate3d(0, 20px, 0);
     }
