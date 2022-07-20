@@ -10,7 +10,7 @@ const ProjectGewoonSamen = () => {
         <>
             <ProjectHeader title="Gewoon Samen" description="offers guidance and care for people with a mental and/or physical disability." image={Image} video={Video} />
 
-            <div className="container">
+            <div className="container animate--fourth">
                 <div className={STYLE["project-information"]}>
                     <div>
                         <h2 className={STYLE["project-information--title"]}>

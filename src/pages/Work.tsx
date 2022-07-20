@@ -29,47 +29,6 @@ const Home = (props: Props) => {
 
     return (
         <>
-            {/* <Hero /> */}
-            {/* <div className={STYLE['work']}>
-                <div className={STYLE['work--grid']}>
-                    <ScrollIndicator title="Work" />
-                    <div className={STYLE['work--social']}>
-                        <Link to="/resume" className={STYLE['work--social-link']}>
-                            <span>
-                                Resume
-                            </span>
-                            <div className={STYLE['work--social-link--icon']}>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                    <polyline points="12 5 19 12 12 19"></polyline>
-                                </svg>
-                            </div>
-                        </Link>
-                        <a href={"https://github.com/NSMNIA"} className={STYLE['work--social-link']} target={'_blank'} >
-                            <span>
-                                GitHub
-                            </span>
-                            <div className={STYLE['work--social-link--icon']}>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                    <polyline points="12 5 19 12 12 19"></polyline>
-                                </svg>
-                            </div>
-                        </a>
-                        <a href={"https://www.linkedin.com/in/kevinstoop/"} className={STYLE['work--social-link']} target={'_blank'} >
-                            <span>
-                                LinkedIn
-                            </span>
-                            <div className={STYLE['work--social-link--icon']}>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                    <polyline points="12 5 19 12 12 19"></polyline>
-                                </svg>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div> */}
             <div className={STYLE['work--projects']}>
                 <div className={STYLE['work--projects-grid']}>
                     <CaseItem title="CRM-system" description='Helps you to manage your customer data.' image={ImageCRM} link="/crm-system" gradientBeginColor="rgb(1, 87, 208)" gradientEndColor="rgb(255,255,255)" />
@@ -105,7 +64,7 @@ const Home = (props: Props) => {
                     <CaseItem title="Kappers Van Nu" description='Website for a hairdressing salon.' image={ImageKappersVanNu} link="/kappers-van-nu" gradientBeginColor="rgb(152, 151, 76)" gradientEndColor="rgb(88, 84, 82)" />
                 </div>
             </div>
-            <div className="container">
+            <div className="container animate--fourth">
                 <ProjectFooter nextProject={null} previousProject={null} />
             </div>
         </>

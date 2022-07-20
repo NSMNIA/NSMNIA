@@ -10,7 +10,7 @@ const ProjectStreamly = () => {
         <>
             <ProjectHeader title="Streamly" description="is a WebApp that shows the offer of the online festivals in the lockdown of Covid-19." image={Image} video={Video} />
 
-            <div className="container">
+            <div className="container animate--fourth">
                 <div className={STYLE["project-information"]}>
                     <div>
                         <h2 className={STYLE["project-information--title"]}>

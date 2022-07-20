@@ -10,7 +10,7 @@ const ProjectWhereAmI = () => {
         <>
             <ProjectHeader title="Where Am I?" description="is a game where you have to guess where you were dropped." image={Image} video={Video} />
 
-            <div className="container">
+            <div className="container animate--fourth">
                 <div className={STYLE["project-information"]}>
                     <div>
                         <h2 className={STYLE["project-information--title"]}>

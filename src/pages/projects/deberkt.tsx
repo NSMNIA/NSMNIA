@@ -10,7 +10,7 @@ const ProjectDeBerkt = () => {
         <>
             <ProjectHeader title="De Berkt" description="is a website for a neighbourhood community." image={Image} video={Video} />
 
-            <div className="container">
+            <div className="container animate--fourth">
                 <div className={STYLE["project-information"]}>
                     <div>
                         <h2 className={STYLE["project-information--title"]}>

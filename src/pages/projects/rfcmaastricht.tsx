@@ -10,7 +10,7 @@ const ProjectRFCMaastricht = () => {
         <>
             <ProjectHeader title="RFC Maastricht" description="is a contest for medical students. On this site they can get the information about the previous and upcoming editions." image={Image} video={Video} />
 
-            <div className="container">
+            <div className="container animate--fourth">
                 <div className={STYLE["project-information"]}>
                     <div>
                         <h2 className={STYLE["project-information--title"]}>
