@@ -17,7 +17,7 @@ const Resume = () => {
                     A few words about me
                 </div>
                 <h1 className={`title animate--second`}>
-                    I'm Kevin Stoop, a web developer who is passionate about building web applications.
+                    I'm Kevin Stoop, a web developer and designer who is passionate about creating beautiful and functional websites.
                 </h1>
                 <p className='animate--third'>
                     For the past 5 years, I have been working as a designer and web developer with large companies and young start-ups all over the Netherlands. In my free time I enjoy photography and field hockey.
@@ -47,7 +47,7 @@ const Resume = () => {
                 </div>
                 <div>
                     <div className={`title-small`}>
-                        Education
+                        Studies
                     </div>
                     <h2 className={`title`}>
                         Education
@@ -253,8 +253,8 @@ const Resume = () => {
                         </li>
                     </ul>
                 </div>
+                <ProjectFooter previousProject={null} nextProject={null} />
             </div>
-            <ProjectFooter previousProject={null} nextProject={null} />
         </div>
     )
 }
