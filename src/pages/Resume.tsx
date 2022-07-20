@@ -12,14 +12,14 @@ const Resume = () => {
 
     return (
         <div className={STYLE['resume']}>
-            <div className={`${STYLE['resume--header']} animate--init`}>
-                <div className={STYLE['resume--title-small']}>
+            <div className={`header animate--init`}>
+                <div className={'title-small'}>
                     A few words about me
                 </div>
-                <h1 className={`${STYLE['resume--title']} animate--second`}>
+                <h1 className={`title animate--second`}>
                     I'm Kevin Stoop, a web developer who is passionate about building web applications.
                 </h1>
-                <p className={`animate--third`}>
+                <p className='animate--third'>
                     For the past 5 years, I have been working as a designer and web developer with large companies and young start-ups all over the Netherlands. In my free time I enjoy photography and field hockey.
                 </p>
             </div>
@@ -29,15 +29,15 @@ const Resume = () => {
                 </div>
                 <div className={STYLE['resume--grid']}>
                     <div>
-                        <div className={STYLE['resume--title-small']}>
+                        <div className='title-small'>
                             Skills
                         </div>
                         <div className={STYLE['resume--grid-items']}>
-                            HTML <em>/</em> CSS <em>/</em> JavaScript <em>/</em> TypeScript <em>/</em> React.js <em>/</em> Node.js <em>/</em> PHP
+                            HTML <em>/</em> CSS <em>/</em> JavaScript <em>/</em> TypeScript <em>/</em> React.js <em>/</em> Node.js <em>/</em> PHP <em>/</em> SQL
                         </div>
                     </div>
                     <div>
-                        <div className={STYLE['resume--title-small']}>
+                        <div className={`title-small`}>
                             Tools I use
                         </div>
                         <div className={STYLE['resume--grid-items']}>
@@ -46,9 +46,12 @@ const Resume = () => {
                     </div>
                 </div>
                 <div>
-                    <div className={STYLE['resume--title-small']}>
+                    <div className={`title-small`}>
                         Education
                     </div>
+                    <h2 className={`title`}>
+                        Education
+                    </h2>
                     <div className={STYLE['resume--list']}>
                         <div className={STYLE['resume--line']}>
                             <div className={STYLE['resume--line-header']}>
@@ -88,10 +91,10 @@ const Resume = () => {
                     </div>
                 </div>
                 <div>
-                    <div className={STYLE['resume--title-small']}>
+                    <div className={`title-small`}>
                         Experience
                     </div>
-                    <h2 className={STYLE['resume--title']}>
+                    <h2 className={`title`}>
                         Over 5 years of experience
                     </h2>
                     <p>
@@ -124,18 +127,6 @@ const Resume = () => {
 
                         <div className={STYLE['resume--line']}>
                             <div className={STYLE['resume--line-header']}>
-                                Ninebits
-                            </div>
-                            <div>
-                                Freelance <em>/</em> Laravel developer
-                            </div>
-                            <div>
-                                2019 <em>—</em> 2021
-                            </div>
-                        </div>
-
-                        <div className={STYLE['resume--line']}>
-                            <div className={STYLE['resume--line-header']}>
                                 P&amp;M
                             </div>
                             <div>
@@ -143,6 +134,18 @@ const Resume = () => {
                             </div>
                             <div>
                                 2020 <em>—</em> 2021
+                            </div>
+                        </div>
+
+                        <div className={STYLE['resume--line']}>
+                            <div className={STYLE['resume--line-header']}>
+                                Ninebits
+                            </div>
+                            <div>
+                                Freelance <em>/</em> Laravel developer
+                            </div>
+                            <div>
+                                2019 <em>—</em> 2021
                             </div>
                         </div>
 
@@ -161,10 +164,10 @@ const Resume = () => {
                     </div>
                 </div>
                 <div>
-                    <div className={STYLE['resume--title-small']}>
+                    <div className={`title-small`}>
                         Clients
                     </div>
-                    <h2 className={STYLE['resume--title']}>
+                    <h2 className={`title`}>
                         Some of the brands I've worked with
                     </h2>
                     <p>
@@ -208,6 +211,47 @@ const Resume = () => {
                             <KappersVanNu />
                         </div>
                     </div>
+                </div>
+                <div className={STYLE['border-top']}>
+                    <div className={`title-small`}>
+                        Contact
+                    </div>
+                    <h2 className={`title`}>
+                        Let's get in touch
+                    </h2>
+                    <p>
+                        If you have any questions, please don't hesitate to contact me.
+                    </p>
+                    <ul>
+                        <li>
+                            <p>
+                                E: <a href={'mailto:kevinstoop9@gmail.com'} className="link">
+                                    kevinstoop9@gmail
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                P: <a href={'tel:+31620784228'} className="link">
+                                    +31 6 20 78 42 28
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href={'https://www.linkedin.com/in/kevinstoop/'} target={"_blank"} className="link">
+                                    LinkedIn
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href={'https://github.com/NSMNIA'} target={"_blank"} className="link">
+                                    GitHub
+                                </a>
+                            </p>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <ProjectFooter previousProject={null} nextProject={null} />

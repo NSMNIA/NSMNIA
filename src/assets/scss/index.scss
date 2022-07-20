@@ -283,7 +283,8 @@ body {
 }
 
 p {
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
+    color: var(--foreground2);
 }
 
 h1,
@@ -443,6 +444,69 @@ p {
     line-height: 1.875rem;
 }
 
+.social {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.125rem;
+    height: max-content;
+    padding-bottom: 150px;
+
+    @include media("<=phone") {
+        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    &-link {
+        font-size: 1.125rem;
+        color: var(--foreground1);
+        position: relative;
+        padding: .4rem 4rem .4rem .4rem;
+        will-change: transform;
+
+        @include media("<=phone") {
+            padding: .4rem 2.5rem .4rem 0;
+        }
+
+        &--icon {
+            width: 45px;
+            height: 45px;
+            background-color: var(--background2--alpha);
+            // border-radius: 5555px;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: -1;
+            transition: transform .5s cubic-bezier(.5, -.5, .1, 1.5), background-color .5s ease-in-out;
+
+            svg {
+                stroke: var(--accent--lighter);
+                will-change: transform;
+                transition: transform .5s cubic-bezier(.5, -.5, .1, 1.5), stroke .5s ease-in-out;
+                transform: rotateZ(-.13turn);
+            }
+
+        }
+
+        &:hover {
+
+            .social-link--icon {
+                transform: translateY(-50%) scale(.8);
+                background-color: var(--accent);
+            }
+
+            svg {
+                transform: rotateZ(0);
+                stroke: hsl(0, 0%, 100%);
+            }
+        }
+    }
+}
+
 @keyframes fadeInView {
     0% {
         transform: translate3d(0, 30px, 0);
@@ -453,4 +517,39 @@ p {
         transform: translate3d(0, 0, 0);
         opacity: 1;
     }
+}
+
+.header {
+    text-align: left;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 200px;
+    padding-bottom: 130px;
+
+    @include media("<=phone") {
+        padding-top: 105px;
+        padding-bottom: 70px;
+    }
+
+    &--scroll {
+        margin-top: 5rem;
+    }
+}
+
+.title {
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.title-small {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-weight: 400;
+    letter-spacing: .2em;
+    color: var(--foreground2);
 }

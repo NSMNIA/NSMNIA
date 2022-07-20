@@ -1,16 +1,12 @@
 import IRoute from "../interfaces/Routes";
 import ProjectBetonboringenGeffen from "../pages/projects/betonboringengeffen";
 import ProjectCRM from "../pages/projects/crm";
-import ProjectDeBerkt from "../pages/projects/deberkt";
 import ProjectDeGegrildeBuffel from "../pages/projects/degegrildebuffel";
 import ProjectGewoonSamen from "../pages/projects/gewoonsamen";
-import ProjectKappersVanNu from "../pages/projects/kappersvannu";
 import ProjectLevelCoaching from "../pages/projects/levelcoaching";
 import ProjectNobinh from "../pages/projects/nobinh";
 import ProjectPIM from "../pages/projects/pim";
 import ProjectPraktijk212 from "../pages/projects/praktijk212";
-import ProjectRedMijnScriptie from "../pages/projects/redmijnscriptie";
-import ProjectRFCMaastricht from "../pages/projects/rfcmaastricht";
 import ProjectScabtik from "../pages/projects/scabtik";
 import ProjectStreamly from "../pages/projects/streamly";
 import ProjectVVD from "../pages/projects/vvd";
@@ -37,10 +33,12 @@ const routes: IRoute[] = [
     }, {
         path: 'praktijk212',
         element: ProjectPraktijk212
-    }, {
-        path: '/rfc-maastricht',
-        element: ProjectRFCMaastricht
-    }, {
+    },
+    // {
+    //     path: '/rfc-maastricht',
+    //     element: ProjectRFCMaastricht
+    // },
+    {
         path: '/pim-system',
         element: ProjectPIM
     }, {
@@ -49,10 +47,12 @@ const routes: IRoute[] = [
     }, {
         path: '/where-am-i',
         element: ProjectWhereAmI
-    }, {
-        path: '/de-berkt',
-        element: ProjectDeBerkt
-    }, {
+    },
+    //  {
+    //     path: '/de-berkt',
+    //     element: ProjectDeBerkt
+    // },
+    {
         path: '/nobinh',
         element: ProjectNobinh
     }, {
@@ -67,13 +67,15 @@ const routes: IRoute[] = [
     }, {
         path: '/betonboringen-geffen',
         element: ProjectBetonboringenGeffen
-    }, {
-        path: '/red-mijn-scriptie',
-        element: ProjectRedMijnScriptie
-    }, {
-        path: "/kappers-van-nu",
-        element: ProjectKappersVanNu
-    }
+    },
+    //  {
+    //     path: '/red-mijn-scriptie',
+    //     element: ProjectRedMijnScriptie
+    // },
+    // {
+    //     path: "/kappers-van-nu",
+    //     element: ProjectKappersVanNu
+    // }
 ];
 
 export default routes;
