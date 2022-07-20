@@ -29,10 +29,16 @@ const Resume = () => {
                     <div className={STYLE['resume--title-small']}>
                         Skills
                     </div>
+                    <div className={STYLE['resume--grid-items']}>
+                        HTML <em>/</em> CSS <em>/</em> JavaScript <em>/</em> TypeScript <em>/</em> React.js <em>/</em> Node.js <em>/</em> PHP
+                    </div>
                 </div>
                 <div>
                     <div className={STYLE['resume--title-small']}>
                         Tools I use
+                    </div>
+                    <div className={STYLE['resume--grid-items']}>
+                        Visual Studio Code <em>/</em> GitHub <em>/</em> Figma <em>/</em> Adobe Photoshop <em>/</em> Adobe Illustrator
                     </div>
                 </div>
             </div>

@@ -39,15 +39,19 @@
         pointer-events: none;
         user-select: none;
 
-        @include media("<=phone") {
-            margin: 70px 0;
-        }
-
         img {
             width: 100%;
             aspect-ratio: 16 / 9;
             object-fit: cover;
             object-position: top;
+        }
+
+        @include media("<=phone") {
+            margin: 70px 0;
+
+            img {
+                aspect-ratio: unset;
+            }
         }
     }
 
@@ -55,9 +59,26 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         text-align: center;
+        gap: 4rem;
+        margin-bottom: 130px;
 
-        @include media("<=phone") {
+        @include media("<=tablet") {
             grid-template-columns: 1fr;
+        }
+
+        &-items {
+            font-weight: 700;
+            font-size: 1.275rem;
+            line-height: 1.875rem;
+            margin-top: .5rem;
+            padding: 0 var(--max-width--padding);
+
+            em {
+                margin: 0 .9375rem;
+                font-weight: 400;
+                color: var(--foreground2);
+                margin: 0 .625rem;
+            }
         }
     }
 }
