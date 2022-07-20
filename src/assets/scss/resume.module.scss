@@ -1,21 +1,63 @@
+@import "./breakpoints";
+
 .resume {
     max-width: var(--max-width);
     padding: 0 var(--max-width--padding);
     margin: 0 auto;
 
     &--header {
-        text-align: center;
+        text-align: left;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 200px;
 
+        @include media("<=phone") {
+            padding-top: 105px;
+        }
+    }
+
+    &--title {
+        font-weight: 700;
     }
 
     &--title-small {
         font-size: .875rem;
         line-height: 1.25rem;
         text-transform: uppercase;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
         font-weight: 400;
-        letter-spacing: .4em;
+        letter-spacing: .2em;
         color: var(--foreground2);
+    }
+
+    &--image {
+        width: 100%;
+        margin: 130px 0;
+        pointer-events: none;
+        user-select: none;
+
+        @include media("<=phone") {
+            margin: 70px 0;
+        }
+
+        img {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+
+    &--grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+
+        @include media("<=phone") {
+            grid-template-columns: 1fr;
+        }
     }
 }

@@ -414,7 +414,7 @@ small,
 }
 
 .animate--second {
-    animation-name: animation-2nd;
+    animation-name: fadeInView;
     animation-duration: .7s;
     animation-delay: .4s;
     animation-fill-mode: both;
@@ -422,11 +422,25 @@ small,
 }
 
 .animate--third {
-    animation-name: animation-3rd;
+    animation-name: fadeInView;
     animation-duration: .7s;
     animation-delay: .8s;
     animation-fill-mode: both;
     animation-timing-function: cubic-bezier(.3, 0, .5, 1);
+}
+
+.animate--fourth {
+    animation-name: fadeInView;
+    animation-duration: .7s;
+    animation-delay: 1.2s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(.3, 0, .5, 1);
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.275rem;
+    line-height: 1.875rem;
 }
 
 @keyframes fadeInView {
@@ -438,31 +452,5 @@ small,
     100% {
         transform: translate3d(0, 0, 0);
         opacity: 1;
-    }
-}
-
-@keyframes animation-2nd {
-
-    0% {
-        opacity: 0;
-        transform: translate3d(0, 20px, 0);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-@keyframes animation-3rd {
-
-    0% {
-        opacity: 0;
-        transform: translate3d(0, 20px, 0);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
     }
 }

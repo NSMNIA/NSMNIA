@@ -1,8 +1,10 @@
 .scroll-indicator {
     &--title {
         color: var(--foreground1);
-        font-weight: 300;
         font-size: 1.125rem;
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 1.5;
     }
 
     &--bar {

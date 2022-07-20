@@ -8,9 +8,9 @@ interface IScrollIndicator {
 const ScrollIndicator: FC<IScrollIndicator> = ({ title }) => {
     return (
         <div className={STYLE['scroll-indicator']}>
-            <div className={STYLE['scroll-indicator--title']}>
+            <p className={STYLE['scroll-indicator--title']}>
                 {title}
-            </div>
+            </p>
             <div className={STYLE['scroll-indicator--bar']}>
                 <div className={STYLE['scroll-indicator--bar-animation']}></div>
             </div>
