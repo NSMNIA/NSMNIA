@@ -2,7 +2,7 @@ import STYLE from '../../assets/scss/project.module.scss';
 import ProjectFooter from '../../components/ProjectFooter';
 import ProjectHeader from "../../components/ProjectHeader";
 
-import Image from '../../assets/images/projects/whereami/index.webp';
+import Image from '../../assets/images/projects/whereami/poster.webp';
 import Video from '../../assets/images/projects/whereami/whereami.webm';
 
 const ProjectWhereAmI = () => {

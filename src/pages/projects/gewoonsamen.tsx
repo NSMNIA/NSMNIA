@@ -3,7 +3,7 @@ import ProjectFooter from '../../components/ProjectFooter';
 import ProjectHeader from "../../components/ProjectHeader";
 
 import Video from '../../assets/images/projects/gewoonsamen/gewoonsamen.webm';
-import Image from '../../assets/images/projects/gewoonsamen/index.webp';
+import Image from '../../assets/images/projects/gewoonsamen/poster.webp';
 
 const ProjectGewoonSamen = () => {
     return (

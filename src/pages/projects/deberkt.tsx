@@ -3,7 +3,7 @@ import ProjectFooter from '../../components/ProjectFooter';
 import ProjectHeader from "../../components/ProjectHeader";
 
 import Video from '../../assets/images/projects/deberkt/deberkt.webm';
-import Image from '../../assets/images/projects/deberkt/index.webp';
+import Image from '../../assets/images/projects/deberkt/poster.webp';
 
 const ProjectDeBerkt = () => {
     return (

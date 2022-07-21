@@ -2,8 +2,8 @@ import STYLE from '../../assets/scss/project.module.scss';
 import ProjectFooter from '../../components/ProjectFooter';
 import ProjectHeader from "../../components/ProjectHeader";
 
-import Image from '../../assets/images/projects/pim/index.webp';
 import Video from '../../assets/images/projects/pim/PIM.webm';
+import Image from '../../assets/images/projects/pim/poster.webp';
 
 const ProjectPIM = () => {
     return (

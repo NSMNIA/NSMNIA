@@ -3,7 +3,7 @@ import ProjectFooter from '../../components/ProjectFooter';
 import ProjectHeader from "../../components/ProjectHeader";
 
 import Video from '../../assets/images/projects/crm/crm.webm';
-import Image from '../../assets/images/projects/crm/index.webp';
+import Image from '../../assets/images/projects/crm/poster.webp';
 
 const ProjectCRM = () => {
     return (

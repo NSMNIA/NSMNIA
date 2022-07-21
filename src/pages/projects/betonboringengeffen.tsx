@@ -3,7 +3,7 @@ import ProjectFooter from '../../components/ProjectFooter';
 import ProjectHeader from "../../components/ProjectHeader";
 
 import Video from '../../assets/images/projects/betonboringengeffen/betonboringengeffen.webm';
-import Image from '../../assets/images/projects/betonboringengeffen/index.webp';
+import Image from '../../assets/images/projects/betonboringengeffen/poster.webp';
 
 const ProjectBetonboringenGeffen = () => {
     return (

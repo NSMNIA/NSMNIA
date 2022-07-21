@@ -3,7 +3,7 @@ import ProjectFooter from '../../components/ProjectFooter';
 import ProjectHeader from "../../components/ProjectHeader";
 
 import Video from '../../assets/images/projects/degegrildebuffel/degegrildebuffel.webm';
-import Image from '../../assets/images/projects/degegrildebuffel/index.webp';
+import Image from '../../assets/images/projects/degegrildebuffel/poster.webp';
 
 const ProjectDeGegrildeBuffel = () => {
     return (

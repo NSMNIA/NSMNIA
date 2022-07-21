@@ -45,11 +45,11 @@ const ProjectHeader: FC<IProjectHeader> = ({ title, description, image, video })
                 <ScrollIndicator title={title} />
             </div>
             <div className={`${STYLE["project--header-video"]} `} style={{ "--scroll-width": scrollWidth } as CSSProperties}>
-                <video ref={videoRef} autoPlay placeholder={image} disableRemotePlayback loop muted>
+                <video ref={videoRef} autoPlay preload="metadata" poster={image} disableRemotePlayback loop muted>
                     <source src={video} type="video/mp4" />
                 </video>
             </div>
-        </div>
+        </div >
     )
 }
 
