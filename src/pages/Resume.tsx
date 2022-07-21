@@ -17,10 +17,10 @@ const Resume = () => {
                     A few words about me
                 </div>
                 <h1 className={`title animate--second`}>
-                    I'm Kevin Stoop, a web developer and designer who is passionate about creating beautiful and functional websites.
+                    I am Kevin Stoop, a designer and web developer from the Netherlands.
                 </h1>
                 <p className='animate--third'>
-                    For the past 5 years, I have been working as a designer and web developer with large companies and young start-ups all over the Netherlands. In my free time I enjoy photography and field hockey.
+                    For the past 5 years, I have worked as a designer and web developer at large companies and young start-ups throughout the Netherlands. In my free time I enjoy photography and hockey.
                 </p>
             </div>
             <div className={'animate--fourth'}>
@@ -98,7 +98,7 @@ const Resume = () => {
                         Over 5 years of experience
                     </h2>
                     <p>
-                        I have been fortunate to build relationships with great clients from all over the Netherlands, ranging from individual clients, to emerging start-ups, to multinational companies. For more details, please visit my <a href={'https://www.linkedin.com/in/kevinstoop/'} target={"_blank"} className="link">LinkedIn profile</a>.
+                        I have been fortunate to build relationships with great clients from all over the Netherlands, ranging from individual clients to emerging start-ups and multinationals. For more details, please visit my <a href={'https://www.linkedin.com/in/kevinstoop/'} target={"_blank"} className="link">LinkedIn profile</a>.
                     </p>
                     <div className={STYLE['resume--list']}>
                         <div className={STYLE['resume--line']}>
@@ -168,7 +168,7 @@ const Resume = () => {
                         Clients
                     </div>
                     <h2 className={`title`}>
-                        Some of the brands I've worked with
+                        Some of the brands I have worked with
                     </h2>
                     <p>
                         In the past 5 years, I have had the pleasure of working with clients from different sectors on many interesting projects.
@@ -226,7 +226,7 @@ const Resume = () => {
                         <li>
                             <p>
                                 E: <a href={'mailto:kevinstoop9@gmail.com'} className="link">
-                                    kevinstoop9@gmail
+                                    kevinstoop9@gmail.com
                                 </a>
                             </p>
                         </li>
