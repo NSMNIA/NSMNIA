@@ -10,7 +10,7 @@ const ProjectVVD = () => {
         <>
             <ProjectHeader title="VVD" description="wanted a personal election guide for the 2022 municipal elections." image={Image} video={Video} />
 
-            <div className="container animate--fourth">
+            <div className="container">
                 <div className={STYLE["project-information"]}>
                     <div>
                         <h2 className={STYLE["project-information--title"]}>

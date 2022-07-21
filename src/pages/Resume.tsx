@@ -12,18 +12,18 @@ const Resume = () => {
 
     return (
         <div className={STYLE['resume']}>
-            <div className={`header animate--init`}>
+            <div className={`header`}>
                 <div className={'title-small'}>
                     A few words about me
                 </div>
-                <h1 className={`title animate--second`}>
+                <h1 className={`title`}>
                     I am Kevin Stoop, a designer and web developer from the Netherlands.
                 </h1>
-                <p className='animate--third'>
+                <p className=''>
                     For the past 5 years, I have worked as a designer and web developer at large companies and young start-ups throughout the Netherlands. In my free time I enjoy photography and hockey.
                 </p>
             </div>
-            <div className={'animate--fourth'}>
+            <div className={''}>
                 <div className={`${STYLE['resume--image']}`}>
                     <img src={ImageKevin} />
                 </div>

@@ -26,20 +26,20 @@ const Home = (props: Props) => {
     return (
         <>
             <div className='container'>
-                <div className={`header animate--init`}>
+                <div className={`header`}>
                     <div className={'title-small'}>
                         Selected work
                     </div>
-                    <h1 className={`title animate--second`}>
+                    <h1 className={`title`}>
                         Some of the projects I have worked on
                     </h1>
 
-                    <div className='header--scroll animate--third'>
+                    <div className='header--scroll '>
                         <ScrollIndicator title='Scroll down' />
                     </div>
                 </div>
             </div>
-            <div className={`${STYLE['work--projects']} animate--fourth`}>
+            <div className={`${STYLE['work--projects']}`}>
                 <div className={STYLE['work--projects-grid']}>
                     <CaseItem title="CRM-system" description='Helps you to manage your customer data.' image={ImageCRM} link="/crm-system" gradientBeginColor="rgb(1, 87, 208)" gradientEndColor="rgb(255,255,255)" />
 
@@ -74,7 +74,7 @@ const Home = (props: Props) => {
                     {/* <CaseItem title="Kappers Van Nu" description='Website for a hairdressing salon.' image={ImageKappersVanNu} link="/kappers-van-nu" gradientBeginColor="rgb(152, 151, 76)" gradientEndColor="rgb(88, 84, 82)" /> */}
                 </div>
             </div>
-            <div className="container animate--fourth">
+            <div className="container">
                 <ProjectFooter nextProject={null} previousProject={null} />
             </div>
         </>

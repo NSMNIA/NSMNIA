@@ -22,8 +22,6 @@ const App = (props: Props) => {
         }
     })
 
-
-
     return (
         <>
             <Router>

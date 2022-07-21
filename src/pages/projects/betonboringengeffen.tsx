@@ -10,7 +10,7 @@ const ProjectBetonboringenGeffen = () => {
         <>
             <ProjectHeader title="Betonboringen Geffen" description="is a company that specializes in concrete and stone, concrete drilling, concrete saws, chopping and milling, fastening technology and demolition work." image={Image} video={Video} />
 
-            <div className="container animate--fourth">
+            <div className="container">
                 <div className={STYLE["project-information"]}>
                     <div>
                         <h2 className={STYLE["project-information--title"]}>

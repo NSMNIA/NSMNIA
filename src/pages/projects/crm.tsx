@@ -10,7 +10,7 @@ const ProjectCRM = () => {
         <>
             <ProjectHeader title="CRM" description="is a Contact Relationship Management System. It helps you to manage your customer data. It can also be used for sending quotes and invoices." image={Image} video={Video} />
 
-            <div className="container animate--fourth">
+            <div className="container">
                 <div className={STYLE["project-information"]}>
                     <div>
                         <h2 className={STYLE["project-information--title"]}>

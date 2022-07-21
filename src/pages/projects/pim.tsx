@@ -10,7 +10,7 @@ const ProjectPIM = () => {
         <>
             <ProjectHeader title="PIM-system" description="forms the basis of product information; from this system, data is retrieved by a web shop, an ERP system and other surrounding systems that need the product data." image={Image} video={Video} />
 
-            <div className="container animate--fourth">
+            <div className="container">
                 <div className={STYLE["project-information"]}>
                     <div>
                         <h2 className={STYLE["project-information--title"]}>
