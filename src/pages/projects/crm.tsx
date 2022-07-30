@@ -50,9 +50,8 @@ const ProjectCRM = () => {
                         </div>
                     </div>
                 </div>
-
-                <ProjectFooter previousProject={'scabtik'} nextProject={null} />
             </div>
+            <ProjectFooter text="Scabtik" uri={'/scabtik'} />
         </>
     )
 }

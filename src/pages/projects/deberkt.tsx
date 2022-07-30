@@ -50,9 +50,8 @@ const ProjectDeBerkt = () => {
                         </div>
                     </div>
                 </div>
-
-                <ProjectFooter previousProject={'nobinh'} nextProject={'where-am-i'} />
             </div>
+            <ProjectFooter text="Nobinh" uri={'/nobinh'} />
         </>
     )
 }

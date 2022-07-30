@@ -48,9 +48,8 @@ const ProjectGewoonSamen = () => {
                         </div>
                     </div>
                 </div>
-
-                <ProjectFooter previousProject={'betonboringen-geffen'} nextProject={'de-gegrilde-buffel'} />
             </div>
+            <ProjectFooter text="Betonboringen Geffen" uri={'/betonboringen-geffen'} />
         </>
     )
 }

@@ -1,9 +1,9 @@
 import STYLE from '../../assets/scss/project.module.scss';
-import ProjectFooter from '../../components/ProjectFooter';
 import ProjectHeader from "../../components/ProjectHeader";
 
 import Video from '../../assets/images/projects/betonboringengeffen/betonboringengeffen.webm';
 import Image from '../../assets/images/projects/betonboringengeffen/poster.webp';
+import ProjectFooter from '../../components/ProjectFooter';
 
 const ProjectBetonboringenGeffen = () => {
     return (
@@ -48,9 +48,8 @@ const ProjectBetonboringenGeffen = () => {
                         </div>
                     </div>
                 </div>
-
-                <ProjectFooter previousProject={'red-mijn-scriptie'} nextProject={'gewoon-samen'} />
             </div>
+            <ProjectFooter text="CRM System" uri={'/crm-system'} />
         </>
     )
 }

@@ -49,9 +49,8 @@ const ProjectStreamly = () => {
                         </div>
                     </div>
                 </div>
-
-                <ProjectFooter previousProject={'where-am-i'} nextProject={'pim-system'} />
             </div>
+            <ProjectFooter text="Where Am I" uri={'/where-am-i'} />
         </>
     )
 }

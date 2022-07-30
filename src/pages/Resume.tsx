@@ -253,8 +253,8 @@ const Resume = () => {
                         </li>
                     </ul>
                 </div>
-                <ProjectFooter previousProject={null} nextProject={null} />
             </div>
+            <ProjectFooter text="My selected work" uri={'/work'} />
         </div>
     )
 }

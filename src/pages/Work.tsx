@@ -13,7 +13,6 @@ import ImageVVD from '../assets/images/projects/vvd/index.webp';
 import ImageWhereAmI from '../assets/images/projects/whereami/index.webp';
 import STYLE from '../assets/scss/work.module.scss';
 import CaseItem from '../components/CaseItem';
-import ProjectFooter from '../components/ProjectFooter';
 import ScrollIndicator from '../components/ScrollIndicator';
 
 type Props = {}
@@ -75,7 +74,6 @@ const Home = (props: Props) => {
                 </div>
             </div>
             <div className="container">
-                <ProjectFooter nextProject={null} previousProject={null} />
             </div>
         </>
     )

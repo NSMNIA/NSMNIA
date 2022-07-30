@@ -49,9 +49,8 @@ const ProjectDeGegrildeBuffel = () => {
                         </div>
                     </div>
                 </div>
-
-                <ProjectFooter previousProject={'gewoon-samen'} nextProject={'level-coaching'} />
             </div>
+            <ProjectFooter text="Gewoon Samen" uri={'/gewoon-samen'} />
         </>
     )
 }

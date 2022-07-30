@@ -53,9 +53,8 @@ const ProjectScabtik = () => {
                         </div>
                     </div>
                 </div>
-
-                <ProjectFooter previousProject={'vvd'} nextProject={'crm-system'} />
             </div>
+            <ProjectFooter text="VVD Kieswijzer" uri={'/vvd'} />
         </>
     )
 }

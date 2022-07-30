@@ -48,9 +48,8 @@ const ProjectPIM = () => {
                         </div>
                     </div>
                 </div>
-
-                <ProjectFooter previousProject={'streamly'} nextProject={'rfc-maastricht'} />
             </div>
+            <ProjectFooter text="Streamly" uri={'/streamly'} />
         </>
     )
 }

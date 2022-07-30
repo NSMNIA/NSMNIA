@@ -3,61 +3,64 @@
 .footer {
     width: 100%;
     display: flex;
+    flex-direction: column;
+    gap: 7.5ch;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    margin: 4rem 0 2rem;
-    padding: 2rem 0;
-    border-top: 1px solid var(--background2);
+    height: 400px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: var(--max-width);
+    padding: var(--max-width--padding);
 
-    @include media("<=phone") {
-        display: grid;
-        grid-template-columns: 1fr;
+    &--placeholder {
+        height: 400px;
     }
 
-    &--links {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        margin: 0 auto;
-        gap: 2rem;
+    &--project {
+        text-align: center;
 
-        @include media("<=phone") {
-            justify-content: space-between;
+        h3 {
+            text-transform: uppercase;
+            color: var(--foreground2);
+            font-size: 1rem;
+            margin: 0;
         }
     }
 
     &--link {
         display: flex;
         align-items: center;
-        gap: .5rem;
+        gap: .5em;
         color: var(--foreground1);
         transition: color .3s ease-in-out;
         position: relative;
-        font-size: .875rem;
+        font-size: 3.5rem;
+        font-weight: 700;
 
         svg {
-            height: 18px;
+            height: 3.5rem;
         }
 
-        &:hover {
+        &:not(.footer--link-disabled):hover {
             color: var(--accent);
         }
 
-        &:nth-child(2) {
-            text-align: right;
+        @include media("<=tablet") {
+            font-size: 2.5rem;
 
-            @include media(">phone") {
-                margin-left: 1rem;
+            svg {
+                height: 2.5rem;
+            }
+        }
 
-                &::before {
-                    content: '';
-                    width: 1px;
-                    height: 100%;
-                    background-color: var(--background2);
-                    position: absolute;
-                    left: -1.5rem;
-                    top: 0;
-                }
+        @include media("<=phone") {
+            font-size: 2rem;
+
+            svg {
+                height: 2rem;
             }
         }
     }
@@ -65,10 +68,6 @@
     &--logo {
         width: 40px;
         height: 40px;
-
-        @include media("<=phone") {
-            margin: 3rem auto 0;
-        }
 
         &-background {
             color: var(--foreground1);

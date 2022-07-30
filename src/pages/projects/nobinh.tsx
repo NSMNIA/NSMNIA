@@ -46,9 +46,8 @@ const ProjectNobinh = () => {
                         </div>
                     </div>
                 </div>
-
-                <ProjectFooter previousProject={'level-coaching'} nextProject={'de-berkt'} />
             </div>
+            <ProjectFooter text="Level Coaching" uri={'/level-coaching'} />
         </>
     )
 }

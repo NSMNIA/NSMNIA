@@ -49,9 +49,8 @@ const ProjectWhereAmI = () => {
                         </div>
                     </div>
                 </div>
-
-                <ProjectFooter previousProject={'de-berkt'} nextProject={'streamly'} />
             </div>
+            <ProjectFooter text="Nobinh" uri={'/nobinh'} />
         </>
     )
 }

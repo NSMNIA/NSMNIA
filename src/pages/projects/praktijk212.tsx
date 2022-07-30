@@ -48,9 +48,8 @@ const ProjectPraktijk212 = () => {
                         </div>
                     </div>
                 </div>
-
-                <ProjectFooter previousProject={'rfc-maastricht'} nextProject={'vvd'} />
             </div>
+            <ProjectFooter text="PIM system" uri={'/pim-system'} />
         </>
     )
 }

@@ -48,9 +48,8 @@ const ProjectVVD = () => {
                         </div>
                     </div>
                 </div>
-
-                <ProjectFooter previousProject={'praktijk212'} nextProject={'scabtik'} />
             </div>
+            <ProjectFooter text="Praktijk 212" uri={'/praktijk212'} />
         </>
     )
 }
