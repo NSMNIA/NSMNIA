@@ -17,10 +17,10 @@ const Resume = () => {
                     A few words about me
                 </div>
                 <h1 className={`title`}>
-                    I am Kevin Stoop, a designer and web developer from the Netherlands.
+                    I am Kevin Stoop, a designer and Full Stack Developer from the Netherlands.
                 </h1>
                 <p className=''>
-                    For the past 5 years, I have worked as a designer and web developer at large companies and young start-ups throughout the Netherlands. In my free time I enjoy photography and hockey.
+                    For the past 5 years, I have worked as a designer and Full Stack Developer at large companies and young start-ups throughout the Netherlands. In my free time I enjoy photography and hockey.
                 </p>
             </div>
             <div className={''}>
