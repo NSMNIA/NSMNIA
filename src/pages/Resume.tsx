@@ -36,24 +36,24 @@ const Resume = () => {
                         style={{ opacity: isLoaded ? 1 : 0 }}
                         src={ImageKevin} alt="Kevin" />
                 </MotionDiv>
-                <MotionDiv className={STYLE['resume--grid']}>
-                    <div>
+                <div className={STYLE['resume--grid']}>
+                    <MotionDiv>
                         <div className='title-small'>
                             Skills
                         </div>
                         <div className={STYLE['resume--grid-items']}>
                             HTML <em>/</em> CSS <em>/</em> JavaScript <em>/</em> TypeScript <em>/</em> React.js <em>/</em> Node.js <em>/</em> PHP <em>/</em> SQL
                         </div>
-                    </div>
-                    <div>
+                    </MotionDiv>
+                    <MotionDiv>
                         <div className={`title-small`}>
                             Tools I use
                         </div>
                         <div className={STYLE['resume--grid-items']}>
                             Visual Studio Code <em>/</em> GitHub <em>/</em> Figma <em>/</em> Adobe Photoshop <em>/</em> Adobe Illustrator
                         </div>
-                    </div>
-                </MotionDiv>
+                    </MotionDiv>
+                </div>
                 <div>
                     <MotionDiv className={`title-small`}>
                         Studies
@@ -242,39 +242,9 @@ const Resume = () => {
                     </MotionDiv>
                     <MotionDiv>
                         <p>
-                            If you have any questions, please don't hesitate to contact me.
+                            If you have any questions, please don't hesitate to contact me. You can reach me by email at <a href={'mailto:kevinstoop9@gmail.com'} target={'_blank'} className="link">kevinstoop9@gmail.com</a>, by phone at <a target={'_blank'} href={'tel:+31620784228'} className="link">+31 6 20 78 42 28</a> or via <a href={'https://www.linkedin.com/in/kevinstoop/'} target={"_blank"} className="link">LinkedIn</a>. If you want to see more of my work, please visit my <a href={'https://github.com/NSMNIA'} target={"_blank"} className="link">GitHub profile</a>.
                         </p>
                     </MotionDiv>
-                    <ul>
-                        <li>
-                            <p>
-                                E: <a href={'mailto:kevinstoop9@gmail.com'} className="link">
-                                    kevinstoop9@gmail.com
-                                </a>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                P: <a href={'tel:+31620784228'} className="link">
-                                    +31 6 20 78 42 28
-                                </a>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <a href={'https://www.linkedin.com/in/kevinstoop/'} target={"_blank"} className="link">
-                                    LinkedIn
-                                </a>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <a href={'https://github.com/NSMNIA'} target={"_blank"} className="link">
-                                    GitHub
-                                </a>
-                            </p>
-                        </li>
-                    </ul>
                 </div>
             </div>
             <ProjectFooter text="My selected work" uri={'/work'} />
