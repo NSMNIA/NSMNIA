@@ -385,6 +385,10 @@ small,
             }
         }
 
+        .error--text {
+            z-index: 3;
+        }
+
         .error--code {
             position: absolute;
             margin-left: auto;

@@ -13,6 +13,7 @@ import ImageVVD from '../assets/images/projects/vvd/index.webp';
 import ImageWhereAmI from '../assets/images/projects/whereami/index.webp';
 import STYLE from '../assets/scss/work.module.scss';
 import CaseItem from '../components/CaseItem';
+import MotionDiv from '../components/MotionDiv';
 import ScrollIndicator from '../components/ScrollIndicator';
 
 type Props = {}
@@ -26,16 +27,18 @@ const Home = (props: Props) => {
         <>
             <div className='container'>
                 <div className={`header`}>
-                    <div className={'title-small'}>
+                    <MotionDiv className={'title-small'}>
                         Selected work
-                    </div>
-                    <h1 className={`title`}>
-                        Some of the projects I have worked on
-                    </h1>
+                    </MotionDiv>
+                    <MotionDiv>
+                        <h1 className={`title`}>
+                            Some of the projects I have worked on
+                        </h1>
+                    </MotionDiv>
 
-                    <div className='header--scroll '>
+                    <MotionDiv className='header--scroll '>
                         <ScrollIndicator title='Scroll down' />
-                    </div>
+                    </MotionDiv>
                 </div>
             </div>
             <div className={`${STYLE['work--projects']}`}>

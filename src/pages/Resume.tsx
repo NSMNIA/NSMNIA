@@ -1,11 +1,12 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import ImageKevin from '../assets/images/kevin.webp';
 import STYLE from '../assets/scss/resume.module.scss';
+import MotionDiv from "../components/MotionDiv";
 import ProjectFooter from '../components/ProjectFooter';
 import { ASML, Berkt, BetonboringenGeffen, CompanyFuel, GewoonSamen, GravityMedia, KappersVanNu, LevelCoaching, PM, Praktijk212, Scabtik, VVD } from '../utils/logos';
 
 const Resume = () => {
-
+    const [isLoaded, setIsLoaded] = useState<boolean>(false);
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [])
@@ -13,21 +14,29 @@ const Resume = () => {
     return (
         <div className={STYLE['resume']}>
             <div className={`header`}>
-                <div className={'title-small'}>
+                <MotionDiv
+                    className={'title-small'}>
                     A few words about me
-                </div>
-                <h1 className={`title`}>
-                    I am Kevin Stoop, a designer and Full Stack Developer from the Netherlands.
-                </h1>
-                <p className=''>
-                    For the past 5 years, I have worked as a designer and Full Stack Developer at large companies and young start-ups throughout the Netherlands. In my free time I enjoy photography and hockey.
-                </p>
+                </MotionDiv>
+                <MotionDiv>
+                    <h1 className={'title'}>
+                        I am Kevin Stoop, a designer and Full Stack Developer from the Netherlands.
+                    </h1>
+                </MotionDiv>
+                <MotionDiv>
+                    <p className={'text'}>
+                        For the past 5 years, I have worked as a designer and Full Stack Developer at large companies and young start-ups throughout the Netherlands. In my free time I enjoy photography and hockey.
+                    </p>
+                </MotionDiv>
             </div>
             <div className={''}>
-                <div className={`${STYLE['resume--image']}`}>
-                    <img src={ImageKevin} />
-                </div>
-                <div className={STYLE['resume--grid']}>
+                <MotionDiv className={`${STYLE['resume--image']}`}>
+                    <img
+                        onLoad={() => setIsLoaded(true)}
+                        style={{ opacity: isLoaded ? 1 : 0 }}
+                        src={ImageKevin} alt="Kevin" />
+                </MotionDiv>
+                <MotionDiv className={STYLE['resume--grid']}>
                     <div>
                         <div className='title-small'>
                             Skills
@@ -44,16 +53,18 @@ const Resume = () => {
                             Visual Studio Code <em>/</em> GitHub <em>/</em> Figma <em>/</em> Adobe Photoshop <em>/</em> Adobe Illustrator
                         </div>
                     </div>
-                </div>
+                </MotionDiv>
                 <div>
-                    <div className={`title-small`}>
+                    <MotionDiv className={`title-small`}>
                         Studies
-                    </div>
-                    <h2 className={`title`}>
-                        Education
-                    </h2>
+                    </MotionDiv>
+                    <MotionDiv>
+                        <h2 className={`title`}>
+                            Education
+                        </h2>
+                    </MotionDiv>
                     <div className={STYLE['resume--list']}>
-                        <div className={STYLE['resume--line']}>
+                        <MotionDiv className={STYLE['resume--line']}>
                             <div className={STYLE['resume--line-header']}>
                                 Fontys Hogeschool
                             </div>
@@ -63,9 +74,9 @@ const Resume = () => {
                             <div>
                                 2019 <em>—</em> Present
                             </div>
-                        </div>
+                        </MotionDiv>
 
-                        <div className={STYLE['resume--line']}>
+                        <MotionDiv className={STYLE['resume--line']}>
                             <div className={STYLE['resume--line-header']}>
                                 Summa College
                             </div>
@@ -75,9 +86,9 @@ const Resume = () => {
                             <div>
                                 2016 <em>—</em> 2019
                             </div>
-                        </div>
+                        </MotionDiv>
 
-                        <div className={STYLE['resume--line']}>
+                        <MotionDiv className={STYLE['resume--line']}>
                             <div className={STYLE['resume--line-header']}>
                                 Van Maerlantlyceum
                             </div>
@@ -87,21 +98,25 @@ const Resume = () => {
                             <div>
                                 2012 <em>—</em> 2016
                             </div>
-                        </div>
+                        </MotionDiv>
                     </div>
                 </div>
                 <div>
-                    <div className={`title-small`}>
+                    <MotionDiv className={`title-small`}>
                         Experience
-                    </div>
-                    <h2 className={`title`}>
-                        Over 5 years of experience
-                    </h2>
-                    <p>
-                        I have been fortunate to build relationships with great clients from all over the Netherlands, ranging from individual clients to emerging start-ups and multinationals. For more details, please visit my <a href={'https://www.linkedin.com/in/kevinstoop/'} target={"_blank"} className="link">LinkedIn profile</a>.
-                    </p>
+                    </MotionDiv>
+                    <MotionDiv>
+                        <h2 className={`title`}>
+                            Over 5 years of experience
+                        </h2>
+                    </MotionDiv>
+                    <MotionDiv>
+                        <p>
+                            I have been fortunate to build relationships with great clients from all over the Netherlands, ranging from individual clients to emerging start-ups and multinationals. For more details, please visit my <a href={'https://www.linkedin.com/in/kevinstoop/'} target={"_blank"} className="link">LinkedIn profile</a>.
+                        </p>
+                    </MotionDiv>
                     <div className={STYLE['resume--list']}>
-                        <div className={STYLE['resume--line']}>
+                        <MotionDiv className={STYLE['resume--line']}>
                             <div className={STYLE['resume--line-header']}>
                                 Revolved Design
                             </div>
@@ -111,9 +126,9 @@ const Resume = () => {
                             <div>
                                 2017 <em>—</em> Present
                             </div>
-                        </div>
+                        </MotionDiv>
 
-                        <div className={STYLE['resume--line']}>
+                        <MotionDiv className={STYLE['resume--line']}>
                             <div className={STYLE['resume--line-header']}>
                                 Gravity Media
                             </div>
@@ -123,9 +138,9 @@ const Resume = () => {
                             <div>
                                 2021 <em>—</em> Present
                             </div>
-                        </div>
+                        </MotionDiv>
 
-                        <div className={STYLE['resume--line']}>
+                        <MotionDiv className={STYLE['resume--line']}>
                             <div className={STYLE['resume--line-header']}>
                                 P&amp;M
                             </div>
@@ -135,9 +150,9 @@ const Resume = () => {
                             <div>
                                 2020 <em>—</em> 2021
                             </div>
-                        </div>
+                        </MotionDiv>
 
-                        <div className={STYLE['resume--line']}>
+                        <MotionDiv className={STYLE['resume--line']}>
                             <div className={STYLE['resume--line-header']}>
                                 Ninebits
                             </div>
@@ -147,9 +162,9 @@ const Resume = () => {
                             <div>
                                 2019 <em>—</em> 2021
                             </div>
-                        </div>
+                        </MotionDiv>
 
-                        <div className={STYLE['resume--line']}>
+                        <MotionDiv className={STYLE['resume--line']}>
                             <div className={STYLE['resume--line-header']}>
                                 ASML
                             </div>
@@ -159,69 +174,77 @@ const Resume = () => {
                             <div>
                                 2017 <em>—</em> 2018
                             </div>
-                        </div>
+                        </MotionDiv>
 
                     </div>
                 </div>
                 <div>
-                    <div className={`title-small`}>
+                    <MotionDiv className={`title-small`}>
                         Clients
-                    </div>
-                    <h2 className={`title`}>
-                        Some of the brands I have worked with
-                    </h2>
-                    <p>
-                        In the past 5 years, I have had the pleasure of working with clients from different sectors on many interesting projects.
-                    </p>
+                    </MotionDiv>
+                    <MotionDiv>
+                        <h2 className={`title`}>
+                            Some of the brands I have worked with
+                        </h2>
+                    </MotionDiv>
+                    <MotionDiv>
+                        <p>
+                            In the past 5 years, I have had the pleasure of working with clients from different sectors on many interesting projects.
+                        </p>
+                    </MotionDiv>
                     <div className={STYLE['resume--list-brands']}>
-                        <div>
+                        <MotionDiv>
                             <CompanyFuel />
-                        </div>
-                        <div>
+                        </MotionDiv>
+                        <MotionDiv>
                             <VVD />
-                        </div>
-                        <div>
+                        </MotionDiv>
+                        <MotionDiv>
                             <ASML />
-                        </div>
-                        <div>
+                        </MotionDiv>
+                        <MotionDiv>
                             <PM />
-                        </div>
-                        <div>
+                        </MotionDiv>
+                        <MotionDiv>
                             <GravityMedia />
-                        </div>
-                        <div>
+                        </MotionDiv>
+                        <MotionDiv>
                             <GewoonSamen />
-                        </div>
-                        <div>
+                        </MotionDiv>
+                        <MotionDiv>
                             <BetonboringenGeffen />
-                        </div>
-                        <div>
+                        </MotionDiv>
+                        <MotionDiv>
                             <Praktijk212 />
-                        </div>
-                        <div>
+                        </MotionDiv>
+                        <MotionDiv>
                             <Scabtik />
-                        </div>
-                        <div>
+                        </MotionDiv>
+                        <MotionDiv>
                             <Berkt />
-                        </div>
-                        <div>
+                        </MotionDiv>
+                        <MotionDiv>
                             <LevelCoaching />
-                        </div>
-                        <div>
+                        </MotionDiv>
+                        <MotionDiv>
                             <KappersVanNu />
-                        </div>
+                        </MotionDiv>
                     </div>
                 </div>
                 <div className={STYLE['border-top']}>
-                    <div className={`title-small`}>
+                    <MotionDiv className={`title-small`}>
                         Contact
-                    </div>
-                    <h2 className={`title`}>
-                        Let's get in touch
-                    </h2>
-                    <p>
-                        If you have any questions, please don't hesitate to contact me.
-                    </p>
+                    </MotionDiv>
+                    <MotionDiv>
+                        <h2 className={`title`}>
+                            Let's get in touch
+                        </h2>
+                    </MotionDiv>
+                    <MotionDiv>
+                        <p>
+                            If you have any questions, please don't hesitate to contact me.
+                        </p>
+                    </MotionDiv>
                     <ul>
                         <li>
                             <p>
