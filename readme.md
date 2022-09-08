@@ -11,6 +11,7 @@ My name is Kevin Stoop and I am a full stack developer. I am from The Netherland
 ![](https://img.shields.io/badge/Code-PHP-informational?style=flat-square&logo=php&logoColor=white&color=0156cb)
 ![](https://img.shields.io/badge/Shell-Bash-informational?style=flat-square&logo=gnu-bash&logoColor=white&color=0156cb)
 ![](https://img.shields.io/badge/Tools-SQL-informational?style=flat-square&logo=mysql&logoColor=white&color=0156cb)
+![](https://img.shields.io/badge/Tools-PostgreSQL-informational?style=flat-square&logo=postgresql&logoColor=white&color=0156cb)
 ![](https://img.shields.io/badge/Tools-Figma-informational?style=flat-square&logo=figma&logoColor=white&color=0156cb)
 ![](https://img.shields.io/badge/Tools-GitHub-informational?style=flat-square&logo=github&logoColor=white&color=0156cb)
 
