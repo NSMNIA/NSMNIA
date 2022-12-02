@@ -136,7 +136,7 @@ const Resume = () => {
                                 Freelance <em>/</em> Full Stack Developer
                             </div>
                             <div>
-                                2021 <em>—</em> Present
+                                2021 <em>—</em> 2022
                             </div>
                         </MotionDiv>
 
